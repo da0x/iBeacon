@@ -162,7 +162,7 @@
 //    }
     
     
-    self.timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(tick) userInfo:nil repeats:true];
+    self.timer = [NSTimer timerWithTimeInterval:.5 target:self selector:@selector(tick) userInfo:nil repeats:true];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
@@ -171,7 +171,7 @@
     if( self.explorer.proximity == CLProximityUnknown )
         return;
     
-    if( self.explorer.proximity == CLProximityImmediate )
+    if( self.explorer.proximity == CLProximityImmediate || self.explorer.proximity == CLProximityNear )
     {
         [self userNear:nil];
     }

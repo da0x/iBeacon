@@ -38,7 +38,7 @@
 	[NSThread detachNewThreadSelector:@selector(listenAndRepeat:) toTarget:self withObject:nil];
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     
-    timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(tick) userInfo:nil repeats:true];
+    timer = [NSTimer timerWithTimeInterval:20 target:self selector:@selector(tick) userInfo:nil repeats:true];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     CATransform3D transform = CATransform3DMakeRotation(3*M_PI_2, 0, 0, 1);
