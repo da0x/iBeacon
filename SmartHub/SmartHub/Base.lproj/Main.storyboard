@@ -20,13 +20,18 @@
                                 <rect key="frame" x="0.0" y="1" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-mW-8Yy">
-                                <rect key="frame" x="208" y="1000" width="352" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-xz-rEP">
+                                <rect key="frame" x="20" y="978" width="400" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="BUTTON TEXT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleServerAddressHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qi2-YO-mV9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -34,7 +39,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="serverAddress" destination="XwY-mW-8Yy" id="doC-VI-a3c"/>
+                        <outlet property="serverAddress" destination="qiG-xz-rEP" id="xC0-9m-KtY"/>
                         <segue destination="UdJ-5j-CXS" kind="modal" identifier="robbie" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="xgl-wG-gGe"/>
                     </connections>
                 </viewController>
