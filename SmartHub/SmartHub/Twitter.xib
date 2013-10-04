@@ -9,6 +9,26 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="egW-5l-67Q">
+                    <rect key="frame" x="35" y="275" width="702" height="709"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">During Express Days 2013, our employees take time off of their daily routines to work on whatever projects they... http://fb.me/GZncPcqk 
+
+Integration Developer News asks top tech companies, including our CEO J Schwan, about #iOS7's impact for business... 
+
+Integration #Developer News asks top tech companies, including our CEO @jschwan, about #iOS7's impact for business http://bit.ly/19fclY2 
+
+#Groupon streamlines their #mobile user experience #mcommerce http://www.mobilecommercedaily.com/groupon-aims-for-bigger-piece-of-mcommerce-with-app-update …
+
+A Lego wall planner that syncs digitally with your Google Calendar http://fb.me/2JSUgQvnA
+
+Solstice Mobile jumps 34 places in this year's Built In Chicago Top 100 list: http://goo.gl/AxKBgt  http://fb.me/1uYNLiSnW 
+</mutableString>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending on Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8iO-gU-xyJ">
                     <rect key="frame" x="35" y="123" width="472" height="76"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
