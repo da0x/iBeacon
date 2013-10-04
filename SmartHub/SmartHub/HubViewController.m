@@ -32,6 +32,11 @@
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.view.transform = CGAffineTransformMakeRotation(M_PI_2);
+}
+
 -(void)displayWelcome
 {
     if( !self.welcomeDisplayed )
