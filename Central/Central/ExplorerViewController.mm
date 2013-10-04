@@ -12,6 +12,7 @@
 #include "DA_ASCII_Table.h"
 
 @interface Explorer : NSObject<CLLocationManagerDelegate>
+@property int proximity;
 @property CLBeaconRegion *beaconRegion;
 @property CLLocationManager* locationManager;
 @property UILabel* distanceLabel1;// temporary
@@ -41,6 +42,8 @@
         
         // Register the beacon region with the location manager.
         [self.locationManager startMonitoringForRegion:self.beaconRegion];
+        
+        self.proximity = CLProximityUnknown;
             
     }
     return self;
@@ -112,6 +115,8 @@
             self.distanceLabel1.text = [NSString stringWithFormat:@"Beacon 1: %d +/- %@ %@", [beacon proximity], distance, unit];
         else
             self.distanceLabel2.text = [NSString stringWithFormat:@"Beacon 2: %d +/- %@ %@", [beacon proximity], distance, unit];
+        
+        self.proximity = beacon.proximity;
     }
     std::cout << myTable << std::endl;
 }
@@ -124,6 +129,7 @@
 @property Explorer *explorer;
 @property IBOutlet UILabel *distance1;
 @property IBOutlet UILabel *distance2;
+@property NSTimer *timer;
 @end
 
 @implementation ExplorerViewController
@@ -154,8 +160,26 @@
 //        char *bytes = "test";
 //        [client sendBytes:bytes count:strlen(bytes)+1];
 //    }
+    
+    
+    self.timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(tick) userInfo:nil repeats:true];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
+-(void)tick
+{
+    if( self.explorer.proximity == CLProximityUnknown )
+        return;
+    
+    if( self.explorer.proximity == CLProximityImmediate )
+    {
+        [self userNear:nil];
+    }
+    else
+    {
+        [self userAway:nil];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -170,6 +194,9 @@
 
 - (IBAction)userNear:(id)sender
 {
+    if( !address.text.length )
+        return;
+    
     if(client == nil ||
        ![client isConnected])
     {
@@ -187,6 +214,9 @@
 
 - (IBAction)userAway:(id)sender
 {
+    if( !address.text.length )
+        return;
+    
     if(client == nil ||
        ![client isConnected])
     {
