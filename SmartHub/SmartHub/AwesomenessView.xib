@@ -30,13 +30,8 @@
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="LNA-7e-Cbl">
                             <rect key="frame" x="212" y="5" width="369" height="397"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <string key="text">Ryan Sander is a graduate of Northern Illinois University with a bachelors in Computer Science and has been professionally developing mobile applications since 2010. He is a frequent concert goer and hockey/football enthusiast. When he's not developing at Solstice, he usually has a number of side projects going on including games or expirimenting with new API's.</string>
-=======
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <string key="text">Michael Cohn has been all out rocking as Discover's production support lead. With his leadership, we've delivered swift resolution to defects, navigated tricky situations with competing parties and most importantly provided PHENOMENAL transparency and client support.</string>
->>>>>>> Updated XIBs and added assets
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -15,4 +15,7 @@
 @property CLBeaconRegion *beaconRegion;
 @property CBPeripheralManager *peripheralManager;
 
+-(id)initWithUUID:(NSString*)UUID;
+-(void)startAdvertizing;
+
 @end

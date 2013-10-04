@@ -9,6 +9,7 @@
 #import "HubViewController.h"
 #import "SmartView.h"
 #import "SmartWelcomeView.h"
+#import "Beacon.h"
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
@@ -16,6 +17,7 @@
 @property bool welcomeDisplayed;
 @property int page;
 @property int pageFactor;
+@property Beacon* beacon;
 @end
 
 @implementation HubViewController
@@ -45,6 +47,10 @@
     for(UIView *view in self.view.subviews){
         view.layer.transform = transform;
     }
+    
+        // start the beacon
+    self.beacon = [[Beacon alloc] initWithUUID:@"91295548-F1E9-41F3-851D-075DCDF192B9"];
+    [self.beacon startAdvertizing];
 }
 
 - (void)restartSlides
