@@ -12,6 +12,8 @@
 
 @interface HubViewController : UIViewController
 {
+    IBOutlet UILabel *serverAddress;
+    
     FastServerSocket *server;
 }
 

@@ -11,6 +11,8 @@
 
 @interface ExplorerViewController : UIViewController
 {
+    IBOutlet UITextField *address;
+    
     FastSocket *client;
 }
 

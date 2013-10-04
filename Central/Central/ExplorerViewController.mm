@@ -137,9 +137,17 @@
     self.explorer.distanceLabel1 = self.distance1;
     self.explorer.distanceLabel2 = self.distance2;
     
-    client = [[FastSocket alloc] initWithHost:@"192.168.10.114" andPort:@"35000"];
-    
-    [client connect];
+//    NSString *ipAddress = address.text;
+//    
+//    if(ipAddress == nil ||
+//       [ipAddress isEqualToString:@""])
+//    {
+//        ipAddress = @"192.168.10.114";
+//    }
+//    
+//    client = [[FastSocket alloc] initWithHost:ipAddress andPort:@"35000"];
+//    
+//    [client connect];
     
 //    if([client isConnected])
 //    {
@@ -162,6 +170,14 @@
 
 - (IBAction)userNear:(id)sender
 {
+    if(client == nil ||
+       ![client isConnected])
+    {
+        client = [[FastSocket alloc] initWithHost:address.text andPort:@"35000"];
+        
+        [client connect];
+    }
+    
     if([client isConnected])
     {
         char *bytes = "distance:0";
@@ -171,6 +187,14 @@
 
 - (IBAction)userAway:(id)sender
 {
+    if(client == nil ||
+       ![client isConnected])
+    {
+        client = [[FastSocket alloc] initWithHost:address.text andPort:@"35000"];
+        
+        [client connect];
+    }
+    
     if([client isConnected])
     {
         char *bytes = "distance:1";
