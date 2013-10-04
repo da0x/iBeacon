@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SmartHub/SmartHub.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Central/Central.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Beacon/Beacon.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SmartHub/SmartHub/SmartHub.xcodeproj">
    </FileRef>
 </Workspace>
