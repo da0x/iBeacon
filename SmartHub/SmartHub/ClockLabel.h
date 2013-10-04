@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ClockLabel : UILabel
-@property NSTimer* timer;
+@property NSTimer * timer;
+@property NSDateFormatter *dateFormatter;
 @end
