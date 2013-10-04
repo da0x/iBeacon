@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FastSocket.h"
 
 @interface ExplorerViewController : UIViewController
+{
+    FastSocket *client;
+}
+
+- (IBAction)userNear:(id)sender;
+- (IBAction)userAway:(id)sender;
 
 @end
