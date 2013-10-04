@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
+		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
+		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
+		4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDA117FE2D3000E27011 /* InfoPlist.strings */; };
+		4FF9BDA517FE2D3000E27011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDA417FE2D3000E27011 /* main.m */; };
+		4FF9BDA917FE2D3000E27011 /* HubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDA817FE2D3000E27011 /* HubAppDelegate.m */; };
+		4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDAA17FE2D3000E27011 /* Main.storyboard */; };
+		4FF9BDAF17FE2D3000E27011 /* HubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDAE17FE2D3000E27011 /* HubViewController.m */; };
+		4FF9BDB117FE2D3000E27011 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDB017FE2D3000E27011 /* Images.xcassets */; };
+		4FF9BDB817FE2D3000E27011 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BDB717FE2D3000E27011 /* XCTest.framework */; };
+		4FF9BDB917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
+		4FF9BDBA17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
+		4FF9BDC217FE2D3000E27011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDC017FE2D3000E27011 /* InfoPlist.strings */; };
+		4FF9BDC417FE2D3000E27011 /* SmartHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDC317FE2D3000E27011 /* SmartHubTests.m */; };
+		4FF9BDDC17FE2DC100E27011 /* DA_Animator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */; };
+		4FF9BDDD17FE2DC100E27011 /* DA_ScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */; };
+		4FF9BDDE17FE2DC100E27011 /* DA_View.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD317FE2DC100E27011 /* DA_View.mm */; };
+		4FF9BDDF17FE2DC100E27011 /* FullscreenBounceAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */; };
+		4FF9BDE217FE2DC100E27011 /* ThumbnailAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */; };
+		4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE417FE2EB500E27011 /* WeatherView.xib */; };
+		4FF9BDE717FE2EFD00E27011 /* AwesomenessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */; };
+		4FF9BDEE17FE316300E27011 /* DynamicAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */; };
+		4FF9BDEF17FE316300E27011 /* DynamicScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */; };
+		4FF9BDF017FE316300E27011 /* SmartView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDED17FE316300E27011 /* SmartView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FF9BDBB17FE2D3000E27011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FF9BD8D17FE2D3000E27011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FF9BD9417FE2D3000E27011;
+			remoteInfo = SmartHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FF9BD9C17FE2D3000E27011 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FF9BDA017FE2D3000E27011 /* SmartHub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHub-Info.plist"; sourceTree = "<group>"; };
+		4FF9BDA217FE2D3000E27011 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FF9BDA417FE2D3000E27011 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FF9BDA617FE2D3000E27011 /* SmartHub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartHub-Prefix.pch"; sourceTree = "<group>"; };
+		4FF9BDA717FE2D3000E27011 /* HubAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubAppDelegate.h; sourceTree = "<group>"; };
+		4FF9BDA817FE2D3000E27011 /* HubAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubAppDelegate.m; sourceTree = "<group>"; };
+		4FF9BDAB17FE2D3000E27011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FF9BDAD17FE2D3000E27011 /* HubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HubViewController.h; sourceTree = "<group>"; };
+		4FF9BDAE17FE2D3000E27011 /* HubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubViewController.m; sourceTree = "<group>"; };
+		4FF9BDB017FE2D3000E27011 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4FF9BDB617FE2D3000E27011 /* SmartHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF9BDB717FE2D3000E27011 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4FF9BDBF17FE2D3000E27011 /* SmartHubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHubTests-Info.plist"; sourceTree = "<group>"; };
+		4FF9BDC117FE2D3000E27011 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FF9BDC317FE2D3000E27011 /* SmartHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHubTests.m; sourceTree = "<group>"; };
+		4FF9BDCE17FE2DC100E27011 /* DA_Animator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_Animator.hpp; path = ../SmartScrollView/DA_Animator.hpp; sourceTree = "<group>"; };
+		4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_Animator.mm; path = ../SmartScrollView/DA_Animator.mm; sourceTree = "<group>"; };
+		4FF9BDD017FE2DC100E27011 /* DA_ScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_ScrollView.hpp; path = ../SmartScrollView/DA_ScrollView.hpp; sourceTree = "<group>"; };
+		4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_ScrollView.mm; path = ../SmartScrollView/DA_ScrollView.mm; sourceTree = "<group>"; };
+		4FF9BDD217FE2DC100E27011 /* DA_View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_View.hpp; path = ../SmartScrollView/DA_View.hpp; sourceTree = "<group>"; };
+		4FF9BDD317FE2DC100E27011 /* DA_View.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_View.mm; path = ../SmartScrollView/DA_View.mm; sourceTree = "<group>"; };
+		4FF9BDD417FE2DC100E27011 /* FullscreenBounceAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FullscreenBounceAnimator.hpp; path = ../SmartScrollView/FullscreenBounceAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FullscreenBounceAnimator.mm; path = ../SmartScrollView/FullscreenBounceAnimator.mm; sourceTree = "<group>"; };
+		4FF9BDDA17FE2DC100E27011 /* ThumbnailAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ThumbnailAnimator.hpp; path = ../SmartScrollView/ThumbnailAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThumbnailAnimator.mm; path = ../SmartScrollView/ThumbnailAnimator.mm; sourceTree = "<group>"; };
+		4FF9BDE417FE2EB500E27011 /* WeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherView.xib; path = SmartHub/WeatherView.xib; sourceTree = "<group>"; };
+		4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AwesomenessView.xib; sourceTree = "<group>"; };
+		4FF9BDE817FE316300E27011 /* DynamicAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicAnimator.hpp; path = ../SmartScrollView/DynamicAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicAnimator.mm; path = ../SmartScrollView/DynamicAnimator.mm; sourceTree = "<group>"; };
+		4FF9BDEA17FE316300E27011 /* DynamicScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicScrollView.hpp; path = ../SmartScrollView/DynamicScrollView.hpp; sourceTree = "<group>"; };
+		4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicScrollView.mm; path = ../SmartScrollView/DynamicScrollView.mm; sourceTree = "<group>"; };
+		4FF9BDEC17FE316300E27011 /* SmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartView.h; path = ../SmartScrollView/SmartView.h; sourceTree = "<group>"; };
+		4FF9BDED17FE316300E27011 /* SmartView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartView.mm; path = ../SmartScrollView/SmartView.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FF9BD9217FE2D3000E27011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */,
+				4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */,
+				4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF9BDB317FE2D3000E27011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BDB817FE2D3000E27011 /* XCTest.framework in Frameworks */,
+				4FF9BDBA17FE2D3000E27011 /* UIKit.framework in Frameworks */,
+				4FF9BDB917FE2D3000E27011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FF9BD8C17FE2D3000E27011 = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDCD17FE2DAB00E27011 /* SmartScrollView */,
+				4FF9BD9E17FE2D3000E27011 /* SmartHub */,
+				4FF9BDBD17FE2D3000E27011 /* SmartHubTests */,
+				4FF9BD9717FE2D3000E27011 /* Frameworks */,
+				4FF9BD9617FE2D3000E27011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FF9BD9617FE2D3000E27011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BD9517FE2D3000E27011 /* SmartHub.app */,
+				4FF9BDB617FE2D3000E27011 /* SmartHubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FF9BD9717FE2D3000E27011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BD9817FE2D3000E27011 /* Foundation.framework */,
+				4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */,
+				4FF9BD9C17FE2D3000E27011 /* UIKit.framework */,
+				4FF9BDB717FE2D3000E27011 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FF9BD9E17FE2D3000E27011 /* SmartHub */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDE317FE2E5600E27011 /* Screens */,
+				4FF9BDA717FE2D3000E27011 /* HubAppDelegate.h */,
+				4FF9BDA817FE2D3000E27011 /* HubAppDelegate.m */,
+				4FF9BDAA17FE2D3000E27011 /* Main.storyboard */,
+				4FF9BDAD17FE2D3000E27011 /* HubViewController.h */,
+				4FF9BDAE17FE2D3000E27011 /* HubViewController.m */,
+				4FF9BDB017FE2D3000E27011 /* Images.xcassets */,
+				4FF9BD9F17FE2D3000E27011 /* Supporting Files */,
+			);
+			path = SmartHub;
+			sourceTree = "<group>";
+		};
+		4FF9BD9F17FE2D3000E27011 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDA017FE2D3000E27011 /* SmartHub-Info.plist */,
+				4FF9BDA117FE2D3000E27011 /* InfoPlist.strings */,
+				4FF9BDA417FE2D3000E27011 /* main.m */,
+				4FF9BDA617FE2D3000E27011 /* SmartHub-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FF9BDBD17FE2D3000E27011 /* SmartHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDC317FE2D3000E27011 /* SmartHubTests.m */,
+				4FF9BDBE17FE2D3000E27011 /* Supporting Files */,
+			);
+			path = SmartHubTests;
+			sourceTree = "<group>";
+		};
+		4FF9BDBE17FE2D3000E27011 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDBF17FE2D3000E27011 /* SmartHubTests-Info.plist */,
+				4FF9BDC017FE2D3000E27011 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FF9BDCD17FE2DAB00E27011 /* SmartScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDE817FE316300E27011 /* DynamicAnimator.hpp */,
+				4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */,
+				4FF9BDEA17FE316300E27011 /* DynamicScrollView.hpp */,
+				4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */,
+				4FF9BDEC17FE316300E27011 /* SmartView.h */,
+				4FF9BDED17FE316300E27011 /* SmartView.mm */,
+				4FF9BDCE17FE2DC100E27011 /* DA_Animator.hpp */,
+				4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */,
+				4FF9BDD017FE2DC100E27011 /* DA_ScrollView.hpp */,
+				4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */,
+				4FF9BDD217FE2DC100E27011 /* DA_View.hpp */,
+				4FF9BDD317FE2DC100E27011 /* DA_View.mm */,
+				4FF9BDD417FE2DC100E27011 /* FullscreenBounceAnimator.hpp */,
+				4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */,
+				4FF9BDDA17FE2DC100E27011 /* ThumbnailAnimator.hpp */,
+				4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */,
+			);
+			name = SmartScrollView;
+			sourceTree = "<group>";
+		};
+		4FF9BDE317FE2E5600E27011 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BDE417FE2EB500E27011 /* WeatherView.xib */,
+				4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */,
+			);
+			name = Screens;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FF9BD9417FE2D3000E27011 /* SmartHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FF9BDC717FE2D3000E27011 /* Build configuration list for PBXNativeTarget "SmartHub" */;
+			buildPhases = (
+				4FF9BD9117FE2D3000E27011 /* Sources */,
+				4FF9BD9217FE2D3000E27011 /* Frameworks */,
+				4FF9BD9317FE2D3000E27011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHub;
+			productName = SmartHub;
+			productReference = 4FF9BD9517FE2D3000E27011 /* SmartHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FF9BDB517FE2D3000E27011 /* SmartHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FF9BDCA17FE2D3000E27011 /* Build configuration list for PBXNativeTarget "SmartHubTests" */;
+			buildPhases = (
+				4FF9BDB217FE2D3000E27011 /* Sources */,
+				4FF9BDB317FE2D3000E27011 /* Frameworks */,
+				4FF9BDB417FE2D3000E27011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FF9BDBC17FE2D3000E27011 /* PBXTargetDependency */,
+			);
+			name = SmartHubTests;
+			productName = SmartHubTests;
+			productReference = 4FF9BDB617FE2D3000E27011 /* SmartHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FF9BD8D17FE2D3000E27011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Hub;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Daher Alfawares";
+				TargetAttributes = {
+					4FF9BDB517FE2D3000E27011 = {
+						TestTargetID = 4FF9BD9417FE2D3000E27011;
+					};
+				};
+			};
+			buildConfigurationList = 4FF9BD9017FE2D3000E27011 /* Build configuration list for PBXProject "SmartHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FF9BD8C17FE2D3000E27011;
+			productRefGroup = 4FF9BD9617FE2D3000E27011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FF9BD9417FE2D3000E27011 /* SmartHub */,
+				4FF9BDB517FE2D3000E27011 /* SmartHubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FF9BD9317FE2D3000E27011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BDB117FE2D3000E27011 /* Images.xcassets in Resources */,
+				4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */,
+				4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */,
+				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
+				4FF9BDE717FE2EFD00E27011 /* AwesomenessView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF9BDB417FE2D3000E27011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BDC217FE2D3000E27011 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FF9BD9117FE2D3000E27011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BDA917FE2D3000E27011 /* HubAppDelegate.m in Sources */,
+				4FF9BDDF17FE2DC100E27011 /* FullscreenBounceAnimator.mm in Sources */,
+				4FF9BDDC17FE2DC100E27011 /* DA_Animator.mm in Sources */,
+				4FF9BDAF17FE2D3000E27011 /* HubViewController.m in Sources */,
+				4FF9BDEE17FE316300E27011 /* DynamicAnimator.mm in Sources */,
+				4FF9BDEF17FE316300E27011 /* DynamicScrollView.mm in Sources */,
+				4FF9BDE217FE2DC100E27011 /* ThumbnailAnimator.mm in Sources */,
+				4FF9BDF017FE316300E27011 /* SmartView.mm in Sources */,
+				4FF9BDDE17FE2DC100E27011 /* DA_View.mm in Sources */,
+				4FF9BDA517FE2D3000E27011 /* main.m in Sources */,
+				4FF9BDDD17FE2DC100E27011 /* DA_ScrollView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF9BDB217FE2D3000E27011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF9BDC417FE2D3000E27011 /* SmartHubTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FF9BDBC17FE2D3000E27011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FF9BD9417FE2D3000E27011 /* SmartHub */;
+			targetProxy = 4FF9BDBB17FE2D3000E27011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FF9BDA117FE2D3000E27011 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FF9BDA217FE2D3000E27011 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FF9BDAA17FE2D3000E27011 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FF9BDAB17FE2D3000E27011 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FF9BDC017FE2D3000E27011 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FF9BDC117FE2D3000E27011 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FF9BDC517FE2D3000E27011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4FF9BDC617FE2D3000E27011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FF9BDC817FE2D3000E27011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHub/SmartHub-Prefix.pch";
+				INFOPLIST_FILE = "SmartHub/SmartHub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FF9BDC917FE2D3000E27011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHub/SmartHub-Prefix.pch";
+				INFOPLIST_FILE = "SmartHub/SmartHub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4FF9BDCB17FE2D3000E27011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartHub.app/SmartHub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHub/SmartHub-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SmartHubTests/SmartHubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4FF9BDCC17FE2D3000E27011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartHub.app/SmartHub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHub/SmartHub-Prefix.pch";
+				INFOPLIST_FILE = "SmartHubTests/SmartHubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FF9BD9017FE2D3000E27011 /* Build configuration list for PBXProject "SmartHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FF9BDC517FE2D3000E27011 /* Debug */,
+				4FF9BDC617FE2D3000E27011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FF9BDC717FE2D3000E27011 /* Build configuration list for PBXNativeTarget "SmartHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FF9BDC817FE2D3000E27011 /* Debug */,
+				4FF9BDC917FE2D3000E27011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FF9BDCA17FE2D3000E27011 /* Build configuration list for PBXNativeTarget "SmartHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FF9BDCB17FE2D3000E27011 /* Debug */,
+				4FF9BDCC17FE2D3000E27011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FF9BD8D17FE2D3000E27011 /* Project object */;
+}
