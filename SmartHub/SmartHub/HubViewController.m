@@ -100,7 +100,7 @@
             //				remaining -= count;
             //			}
             
-			NSString *receivedString = [NSString stringWithUTF8String:buf];
+			NSString *receivedString = [NSString stringWithUTF8String:(const char*)buf];
 			NSLog(@"%@", receivedString);
             
             if( [receivedString isEqualToString:@"distance:0"] )
