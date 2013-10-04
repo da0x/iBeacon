@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1473288B17FE61B9004FA7FE /* FastServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288817FE61B9004FA7FE /* FastServerSocket.m */; };
 		1473288C17FE61B9004FA7FE /* FastSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288A17FE61B9004FA7FE /* FastSocket.m */; };
+		14BD7A9B17FF177200D4F84A /* Beacon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14BD7A9A17FF177200D4F84A /* Beacon.mm */; };
+		14BD7A9D17FF18E500D4F84A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BD7A9C17FF18E500D4F84A /* CoreLocation.framework */; };
+		14BD7A9F17FF18EB00D4F84A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BD7A9E17FF18EB00D4F84A /* CoreBluetooth.framework */; };
 		4F86097417FE75910041D168 /* JohnW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097317FE75910041D168 /* JohnW.jpg */; };
 		4F86097717FEF1090041D168 /* Meetings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097517FEF1090041D168 /* Meetings.xib */; };
 		4F86097817FEF1090041D168 /* Twitter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097617FEF1090041D168 /* Twitter.xib */; };
@@ -61,6 +64,10 @@
 		1473288817FE61B9004FA7FE /* FastServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastServerSocket.m; sourceTree = "<group>"; };
 		1473288917FE61B9004FA7FE /* FastSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSocket.h; sourceTree = "<group>"; };
 		1473288A17FE61B9004FA7FE /* FastSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSocket.m; sourceTree = "<group>"; };
+		14BD7A9917FF177200D4F84A /* Beacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beacon.h; sourceTree = "<group>"; };
+		14BD7A9A17FF177200D4F84A /* Beacon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Beacon.mm; sourceTree = "<group>"; };
+		14BD7A9C17FF18E500D4F84A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14BD7A9E17FF18EB00D4F84A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4F86097317FE75910041D168 /* JohnW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JohnW.jpg; path = SmartHub/images/JohnW.jpg; sourceTree = "<group>"; };
 		4F86097517FEF1090041D168 /* Meetings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Meetings.xib; path = SmartHub/Meetings.xib; sourceTree = "<group>"; };
 		4F86097617FEF1090041D168 /* Twitter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Twitter.xib; path = SmartHub/Twitter.xib; sourceTree = "<group>"; };
@@ -118,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BD7A9F17FF18EB00D4F84A /* CoreBluetooth.framework in Frameworks */,
+				14BD7A9D17FF18E500D4F84A /* CoreLocation.framework in Frameworks */,
 				4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */,
 				4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */,
 				4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */,
@@ -160,6 +169,8 @@
 		4FF9BD9717FE2D3000E27011 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14BD7A9E17FF18EB00D4F84A /* CoreBluetooth.framework */,
+				14BD7A9C17FF18E500D4F84A /* CoreLocation.framework */,
 				4FF9BD9817FE2D3000E27011 /* Foundation.framework */,
 				4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */,
 				4FF9BD9C17FE2D3000E27011 /* UIKit.framework */,
@@ -187,6 +198,8 @@
 				4FF9BD9F17FE2D3000E27011 /* Supporting Files */,
 				4F86097917FEF3DD0041D168 /* ClockLabel.h */,
 				4F86097A17FEF3DD0041D168 /* ClockLabel.m */,
+				14BD7A9917FF177200D4F84A /* Beacon.h */,
+				14BD7A9A17FF177200D4F84A /* Beacon.mm */,
 			);
 			path = SmartHub;
 			sourceTree = "<group>";
@@ -390,6 +403,7 @@
 				4FF9BE0E17FE5A9900E27011 /* DynamicScrollView.mm in Sources */,
 				4FF9BE0C17FE5A9900E27011 /* DA_View.mm in Sources */,
 				4F86097B17FEF3DD0041D168 /* ClockLabel.m in Sources */,
+				14BD7A9B17FF177200D4F84A /* Beacon.mm in Sources */,
 				4FF9BDA517FE2D3000E27011 /* main.m in Sources */,
 				4FF9BE1117FE5A9900E27011 /* ThumbnailAnimator.mm in Sources */,
 				4FF9BE0B17FE5A9900E27011 /* DA_ScrollView.mm in Sources */,
