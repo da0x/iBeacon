@@ -11,7 +11,7 @@
 #import <arpa/inet.h>
 
 @interface HubViewController ()
-
+@property bool welcomeDisplayed;
 @end
 
 @implementation HubViewController
@@ -29,6 +29,24 @@
     
 	[NSThread detachNewThreadSelector:@selector(listenAndRepeat:) toTarget:self withObject:nil];
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+}
+
+-(void)displayWelcome
+{
+    if( !self.welcomeDisplayed )
+    {
+        [self performSegueWithIdentifier:@"robbie" sender:self];
+        self.welcomeDisplayed = true;
+    }
+}
+
+-(void)dismissWelcome
+{
+    if( self.welcomeDisplayed )
+    {
+        [self dismissViewControllerAnimated:true completion:nil];
+        self.welcomeDisplayed = false;
+    }
 }
 
 - (void)dealloc
@@ -85,8 +103,17 @@
 			NSString *receivedString = [NSString stringWithUTF8String:buf];
 			NSLog(@"%@", receivedString);
             
+            if( [receivedString isEqualToString:@"distance:0"] )
+            {
+                [self performSelectorOnMainThread:@selector(displayWelcome) withObject:nil waitUntilDone:true];
+            }
+            else
+            {
+                [self performSelectorOnMainThread:@selector(dismissWelcome) withObject:nil waitUntilDone:true];
+            }
+            
 			// Allow other threads to work.
-			[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+			[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
 		}
 		while(count > 0);
         

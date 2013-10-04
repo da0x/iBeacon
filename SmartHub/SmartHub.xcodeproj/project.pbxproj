@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1473288B17FE61B9004FA7FE /* FastServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288817FE61B9004FA7FE /* FastServerSocket.m */; };
 		1473288C17FE61B9004FA7FE /* FastSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288A17FE61B9004FA7FE /* FastSocket.m */; };
+		4F86097417FE75910041D168 /* JohnW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097317FE75910041D168 /* JohnW.jpg */; };
 		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
 		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
 		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
@@ -53,6 +54,7 @@
 		1473288817FE61B9004FA7FE /* FastServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastServerSocket.m; sourceTree = "<group>"; };
 		1473288917FE61B9004FA7FE /* FastSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSocket.h; sourceTree = "<group>"; };
 		1473288A17FE61B9004FA7FE /* FastSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSocket.m; sourceTree = "<group>"; };
+		4F86097317FE75910041D168 /* JohnW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JohnW.jpg; path = SmartHub/images/JohnW.jpg; sourceTree = "<group>"; };
 		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -235,6 +237,7 @@
 		4FF9BE1A17FE677400E27011 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F86097317FE75910041D168 /* JohnW.jpg */,
 				4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */,
 				4FF9BE1C17FE678000E27011 /* RyanS.jpg */,
 				4FF9BE1D17FE678000E27011 /* solsticelogo@2x.png */,
@@ -323,6 +326,7 @@
 				4FF9BE1F17FE678000E27011 /* RyanS.jpg in Resources */,
 				4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */,
 				4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */,
+				4F86097417FE75910041D168 /* JohnW.jpg in Resources */,
 				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
 				4FF9BE1E17FE678000E27011 /* Partly-Cloudy-icon.png in Resources */,
 				4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */,
