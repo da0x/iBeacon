@@ -30,9 +30,16 @@
     
 	[NSThread detachNewThreadSelector:@selector(listenAndRepeat:) toTarget:self withObject:nil];
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+    
+    timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:true];
 }
 
--(void)displayWelcome
+- (void)tick
+{
+    NSLog(@"Tick");
+}
+
+- (void)displayWelcome
 {
     if( !self.welcomeDisplayed )
     {
@@ -41,7 +48,7 @@
     }
 }
 
--(void)dismissWelcome
+- (void)dismissWelcome
 {
     if( self.welcomeDisplayed )
     {

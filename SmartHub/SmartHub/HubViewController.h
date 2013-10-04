@@ -15,6 +15,8 @@
     IBOutlet UILabel *serverAddress;
     
     FastServerSocket *server;
+    
+    NSTimer *timer;
 }
 
 @end
