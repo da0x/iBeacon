@@ -21,6 +21,7 @@
 		4F86098117FF064E0041D168 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86098017FF064E0041D168 /* Welcome.xib */; };
 		4F86098417FF07410041D168 /* SmartWelcomeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F86098317FF07410041D168 /* SmartWelcomeView.mm */; };
 		4F86098717FF267C0041D168 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86098617FF267C0041D168 /* WelcomeViewController.m */; };
+		4F86098917FF27FB0041D168 /* New-York-City-Skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F86098817FF27FB0041D168 /* New-York-City-Skyline.jpg */; };
 		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
 		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
 		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
@@ -81,6 +82,7 @@
 		4F86098317FF07410041D168 /* SmartWelcomeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartWelcomeView.mm; path = SmartScrollView/SmartWelcomeView.mm; sourceTree = "<group>"; };
 		4F86098517FF267C0041D168 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		4F86098617FF267C0041D168 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		4F86098817FF27FB0041D168 /* New-York-City-Skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "New-York-City-Skyline.jpg"; path = "SmartHub/images/New-York-City-Skyline.jpg"; sourceTree = "<group>"; };
 		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -279,6 +281,7 @@
 		4FF9BE1A17FE677400E27011 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F86098817FF27FB0041D168 /* New-York-City-Skyline.jpg */,
 				4F86097C17FF056A0041D168 /* sad.png */,
 				4F86097317FE75910041D168 /* JohnW.jpg */,
 				4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */,
@@ -374,6 +377,7 @@
 				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
 				4F86097D17FF056A0041D168 /* sad.png in Resources */,
 				4F86098117FF064E0041D168 /* Welcome.xib in Resources */,
+				4F86098917FF27FB0041D168 /* New-York-City-Skyline.jpg in Resources */,
 				4FF9BE1E17FE678000E27011 /* Partly-Cloudy-icon.png in Resources */,
 				4F86097817FEF1090041D168 /* Twitter.xib in Resources */,
 				4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */,
