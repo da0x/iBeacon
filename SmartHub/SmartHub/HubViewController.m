@@ -22,14 +22,38 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSString *ipAddress = [self getIPAddress];
+    serverAddress.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    serverAddress.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
     
-    [serverAddress setText:[NSString stringWithFormat:@"Server Address: %@", ipAddress]];
+    [serverAddress setTitle:[NSString stringWithFormat:@"Server Address: %@", [self getIPAddress]] forState:UIControlStateNormal];
     
 	server = [[FastServerSocket alloc] initWithPort:@"35000"];
     
 	[NSThread detachNewThreadSelector:@selector(listenAndRepeat:) toTarget:self withObject:nil];
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+    
+    timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:true];
+}
+
+- (void)tick
+{
+    NSLog(@"Tick");
+}
+
+- (IBAction)toggleServerAddressHidden:(id)sender
+{    
+    static BOOL shouldHide = NO;
+    
+    if(shouldHide)
+    {
+        [serverAddress setTitle:[NSString stringWithFormat:@"Server Address: %@", [self getIPAddress]] forState:UIControlStateNormal];
+    }
+    else
+    {
+        [serverAddress setTitle:@"" forState:UIControlStateNormal];
+    }
+    
+    shouldHide = !shouldHide;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -37,7 +61,7 @@
     self.view.transform = CGAffineTransformMakeRotation(M_PI_2);
 }
 
--(void)displayWelcome
+- (void)displayWelcome
 {
     if( !self.welcomeDisplayed )
     {
@@ -46,7 +70,7 @@
     }
 }
 
--(void)dismissWelcome
+- (void)dismissWelcome
 {
     if( self.welcomeDisplayed )
     {
