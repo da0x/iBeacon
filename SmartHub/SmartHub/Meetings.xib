@@ -9,29 +9,119 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8iO-gU-xyJ">
-                    <rect key="frame" x="35" y="155" width="285" height="71"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Meetings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8iO-gU-xyJ">
+                    <rect key="frame" x="35" y="92" width="285" height="71"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" id="Tsd-yS-bru">
-                    <rect key="frame" x="97" y="380" width="601" height="430"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KeHe Daily Standup - 9am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="PCF-h3-rCL">
+                    <rect key="frame" x="119" y="222" width="629" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android CDC - 10am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="Ed3-Df-S6k">
+                    <rect key="frame" x="119" y="289" width="629" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interview - 11am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="FE0-Do-pE4">
+                    <rect key="frame" x="119" y="423" width="629" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales and Marketing Standup - 8:30am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="r93-4R-kVA">
+                    <rect key="frame" x="119" y="490" width="629" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Leads Meeting - 2pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" id="dep-yj-Bn0">
+                    <rect key="frame" x="119" y="691" width="629" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="solsticelogo.png" id="AhA-tq-6um">
                     <rect key="frame" x="35" y="29" width="119" height="55"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Boardroom.png" id="szM-DK-jRD">
+                    <rect key="frame" x="35" y="214" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.36862745099999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="FrontRoom.png" id="HU6-pV-sju">
+                    <rect key="frame" x="35" y="281" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.81568627450980391" green="0.38039215686274508" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Engineering.png" id="cC7-C4-XRV">
+                    <rect key="frame" x="35" y="348" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.69803921568627447" green="0.85490196078431369" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Lakeview.png" id="RDy-Ld-cR8">
+                    <rect key="frame" x="35" y="415" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.70196078431372544" green="0.22352941176470587" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Hotdog.png" id="UPZ-eW-yd9">
+                    <rect key="frame" x="35" y="482" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.792156862745098" green="0.5607843137254902" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="RiverEast.png" id="lnz-H1-3LN">
+                    <rect key="frame" x="35" y="549" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.38823529411764707" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="WestLoop.png" id="ccm-r1-QIM">
+                    <rect key="frame" x="35" y="616" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.44313725490196076" green="0.9882352941176471" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Starbucks.png" id="91y-U4-88w">
+                    <rect key="frame" x="35" y="683" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="SouthLoop.png" id="oke-zf-zEE">
+                    <rect key="frame" x="35" y="817" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.6470588235294118" green="0.61176470588235299" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LincolnPark.png" id="Wea-X8-r60">
+                    <rect key="frame" x="35" y="750" width="65" height="59"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" red="0.23529411764705882" green="0.58431372549019611" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
         </view>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
     <resources>
+        <image name="Boardroom.png" width="154" height="138"/>
+        <image name="Engineering.png" width="154" height="138"/>
+        <image name="FrontRoom.png" width="154" height="138"/>
+        <image name="Hotdog.png" width="154" height="138"/>
+        <image name="Lakeview.png" width="154" height="138"/>
+        <image name="LincolnPark.png" width="154" height="138"/>
+        <image name="RiverEast.png" width="75" height="68"/>
+        <image name="SouthLoop.png" width="154" height="138"/>
+        <image name="Starbucks.png" width="154" height="138"/>
+        <image name="WestLoop.png" width="154" height="138"/>
         <image name="solsticelogo.png" width="119" height="55"/>
     </resources>
 </document>
