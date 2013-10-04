@@ -163,7 +163,7 @@ namespace DA
         virtual DynamicSettings dynamic_settings(Speed speed)
         {
             DynamicSettings dynamicConstants[] = {
-                {  .7, 1, 1  }, // Speed::Slow
+                {  1, 3, 1  }, // Speed::Slow
                 {  .6, 3, 2  }, // Speed::Fast
                 {  .3, 2, 3  }, // No name yet
             };
