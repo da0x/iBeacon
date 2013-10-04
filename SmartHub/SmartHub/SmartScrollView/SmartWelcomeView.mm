@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 Daher Alfawares. All rights reserved.
 //
 
-#import "SmartView.h"
+#import "SmartWelcomeView.h"
 #import "DynamicScrollView.hpp"
 
-@interface SmartView () <UIScrollViewDelegate>
+@interface SmartWelcomeView () <UIScrollViewDelegate>
 @property IBOutlet DynamicScrollView* scrollView;
 @property NSTimer* timer;
 @end
 
-@implementation SmartView
+@implementation SmartWelcomeView
 
 -(void)addViewFromNibNamed:(NSString*)name
 {
@@ -26,10 +26,8 @@
 {
     [super awakeFromNib];
     
-    [self addViewFromNibNamed:@"WeatherView"];
-    [self addViewFromNibNamed:@"AwesomenessView"];
-    [self addViewFromNibNamed:@"Twitter"];
-    [self addViewFromNibNamed:@"Meetings"];
+    [self addViewFromNibNamed:@"Welcome"];
+    [self addViewFromNibNamed:@"Goodbye"];
 }
 
 
@@ -48,5 +46,10 @@
     [self.scrollView animateIntro];
 }
 
+
+-(void)scrollToPage:(int)page
+{
+    [self.scrollView scrollToPage:page];
+}
 
 @end

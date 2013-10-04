@@ -7,6 +7,7 @@
 //
 
 #import "HubViewController.h"
+#import "SmartWelcomeView.h"
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
@@ -44,9 +45,15 @@
 {
     if( self.welcomeDisplayed )
     {
-        [self dismissViewControllerAnimated:true completion:nil];
-        self.welcomeDisplayed = false;
+        [(SmartWelcomeView*)self.presentedViewController.view scrollToPage:1];
+        [self performSelector:@selector(dismiss) withObject:nil afterDelay:2];
     }
+}
+
+-(void)dismiss
+{
+    [self dismissViewControllerAnimated:true completion:nil];
+    self.welcomeDisplayed = false;
 }
 
 - (void)dealloc

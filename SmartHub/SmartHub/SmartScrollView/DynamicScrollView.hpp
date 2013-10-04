@@ -21,4 +21,6 @@
 -(void)addFastDynamicView:(UIView*)view;
 -(void)addThumbnailView:(UIView*)view;
 
+-(void)scrollToPage:(int)page;
+
 @end

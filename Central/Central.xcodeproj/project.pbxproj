@@ -192,7 +192,7 @@
 				ORGANIZATIONNAME = "Daher Alfawares";
 				TargetAttributes = {
 					4F47B40117F5DAD700F706A7 = {
-						DevelopmentTeam = LS2EX7B462;
+						DevelopmentTeam = NF856H64DK;
 					};
 					4F47B42217F5DAD700F706A7 = {
 						TestTargetID = 4F47B40117F5DAD700F706A7;

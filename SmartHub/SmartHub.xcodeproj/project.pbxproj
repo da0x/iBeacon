@@ -13,6 +13,10 @@
 		4F86097717FEF1090041D168 /* Meetings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097517FEF1090041D168 /* Meetings.xib */; };
 		4F86097817FEF1090041D168 /* Twitter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097617FEF1090041D168 /* Twitter.xib */; };
 		4F86097B17FEF3DD0041D168 /* ClockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86097A17FEF3DD0041D168 /* ClockLabel.m */; };
+		4F86097D17FF056A0041D168 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097C17FF056A0041D168 /* sad.png */; };
+		4F86097F17FF05DB0041D168 /* Goodbye.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097E17FF05DB0041D168 /* Goodbye.xib */; };
+		4F86098117FF064E0041D168 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86098017FF064E0041D168 /* Welcome.xib */; };
+		4F86098417FF07410041D168 /* SmartWelcomeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F86098317FF07410041D168 /* SmartWelcomeView.mm */; };
 		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
 		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
 		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
@@ -62,6 +66,11 @@
 		4F86097617FEF1090041D168 /* Twitter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Twitter.xib; path = SmartHub/Twitter.xib; sourceTree = "<group>"; };
 		4F86097917FEF3DD0041D168 /* ClockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockLabel.h; sourceTree = "<group>"; };
 		4F86097A17FEF3DD0041D168 /* ClockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockLabel.m; sourceTree = "<group>"; };
+		4F86097C17FF056A0041D168 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad.png; path = SmartHub/images/sad.png; sourceTree = "<group>"; };
+		4F86097E17FF05DB0041D168 /* Goodbye.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Goodbye.xib; path = SmartHub/Goodbye.xib; sourceTree = "<group>"; };
+		4F86098017FF064E0041D168 /* Welcome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Welcome.xib; path = SmartHub/Welcome.xib; sourceTree = "<group>"; };
+		4F86098217FF07410041D168 /* SmartWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartWelcomeView.h; path = SmartScrollView/SmartWelcomeView.h; sourceTree = "<group>"; };
+		4F86098317FF07410041D168 /* SmartWelcomeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartWelcomeView.mm; path = SmartScrollView/SmartWelcomeView.mm; sourceTree = "<group>"; };
 		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +171,8 @@
 		4FF9BD9E17FE2D3000E27011 /* SmartHub */ = {
 			isa = PBXGroup;
 			children = (
+				4F86098217FF07410041D168 /* SmartWelcomeView.h */,
+				4F86098317FF07410041D168 /* SmartWelcomeView.mm */,
 				4FF9BDE317FE2E5600E27011 /* Screens */,
 				1473288717FE61B9004FA7FE /* FastServerSocket.h */,
 				1473288817FE61B9004FA7FE /* FastServerSocket.m */,
@@ -235,11 +246,13 @@
 		4FF9BDE317FE2E5600E27011 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4FF9BE1A17FE677400E27011 /* Images */,
 				4F86097517FEF1090041D168 /* Meetings.xib */,
 				4F86097617FEF1090041D168 /* Twitter.xib */,
-				4FF9BE1A17FE677400E27011 /* Images */,
 				4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */,
 				4FF9BDE417FE2EB500E27011 /* WeatherView.xib */,
+				4F86098017FF064E0041D168 /* Welcome.xib */,
+				4F86097E17FF05DB0041D168 /* Goodbye.xib */,
 			);
 			name = Screens;
 			path = ..;
@@ -248,6 +261,7 @@
 		4FF9BE1A17FE677400E27011 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F86097C17FF056A0041D168 /* sad.png */,
 				4F86097317FE75910041D168 /* JohnW.jpg */,
 				4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */,
 				4FF9BE1C17FE678000E27011 /* RyanS.jpg */,
@@ -333,12 +347,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F86097F17FF05DB0041D168 /* Goodbye.xib in Resources */,
 				4FF9BDB117FE2D3000E27011 /* Images.xcassets in Resources */,
 				4FF9BE1F17FE678000E27011 /* RyanS.jpg in Resources */,
 				4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */,
 				4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */,
 				4F86097417FE75910041D168 /* JohnW.jpg in Resources */,
 				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
+				4F86097D17FF056A0041D168 /* sad.png in Resources */,
+				4F86098117FF064E0041D168 /* Welcome.xib in Resources */,
 				4FF9BE1E17FE678000E27011 /* Partly-Cloudy-icon.png in Resources */,
 				4F86097817FEF1090041D168 /* Twitter.xib in Resources */,
 				4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */,
@@ -365,6 +382,7 @@
 				4FF9BE1017FE5A9900E27011 /* SmartView.mm in Sources */,
 				4FF9BDA917FE2D3000E27011 /* HubAppDelegate.m in Sources */,
 				4FF9BE0A17FE5A9900E27011 /* DA_Animator.mm in Sources */,
+				4F86098417FF07410041D168 /* SmartWelcomeView.mm in Sources */,
 				1473288B17FE61B9004FA7FE /* FastServerSocket.m in Sources */,
 				4FF9BDAF17FE2D3000E27011 /* HubViewController.m in Sources */,
 				4FF9BE0F17FE5A9900E27011 /* FullscreenBounceAnimator.mm in Sources */,

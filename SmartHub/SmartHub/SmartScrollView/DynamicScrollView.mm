@@ -90,6 +90,12 @@
     dynamicAnimator.activate();
 }
 
+
+-(void)scrollToPage:(int)page
+{
+    [self setContentOffset:CGPointMake(page*self.frame.size.width, 0) animated:true];
+}
+
 @end
 
 
