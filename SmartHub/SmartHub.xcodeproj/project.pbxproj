@@ -20,6 +20,7 @@
 		4F86097F17FF05DB0041D168 /* Goodbye.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097E17FF05DB0041D168 /* Goodbye.xib */; };
 		4F86098117FF064E0041D168 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86098017FF064E0041D168 /* Welcome.xib */; };
 		4F86098417FF07410041D168 /* SmartWelcomeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F86098317FF07410041D168 /* SmartWelcomeView.mm */; };
+		4F86098717FF267C0041D168 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86098617FF267C0041D168 /* WelcomeViewController.m */; };
 		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
 		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
 		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
@@ -78,6 +79,8 @@
 		4F86098017FF064E0041D168 /* Welcome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Welcome.xib; path = SmartHub/Welcome.xib; sourceTree = "<group>"; };
 		4F86098217FF07410041D168 /* SmartWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartWelcomeView.h; path = SmartScrollView/SmartWelcomeView.h; sourceTree = "<group>"; };
 		4F86098317FF07410041D168 /* SmartWelcomeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartWelcomeView.mm; path = SmartScrollView/SmartWelcomeView.mm; sourceTree = "<group>"; };
+		4F86098517FF267C0041D168 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		4F86098617FF267C0041D168 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -194,6 +197,8 @@
 				4FF9BDAA17FE2D3000E27011 /* Main.storyboard */,
 				4FF9BDAD17FE2D3000E27011 /* HubViewController.h */,
 				4FF9BDAE17FE2D3000E27011 /* HubViewController.m */,
+				4F86098517FF267C0041D168 /* WelcomeViewController.h */,
+				4F86098617FF267C0041D168 /* WelcomeViewController.m */,
 				4FF9BDB017FE2D3000E27011 /* Images.xcassets */,
 				4FF9BD9F17FE2D3000E27011 /* Supporting Files */,
 				4F86097917FEF3DD0041D168 /* ClockLabel.h */,
@@ -405,6 +410,7 @@
 				4F86097B17FEF3DD0041D168 /* ClockLabel.m in Sources */,
 				14BD7A9B17FF177200D4F84A /* Beacon.mm in Sources */,
 				4FF9BDA517FE2D3000E27011 /* main.m in Sources */,
+				4F86098717FF267C0041D168 /* WelcomeViewController.m in Sources */,
 				4FF9BE1117FE5A9900E27011 /* ThumbnailAnimator.mm in Sources */,
 				4FF9BE0B17FE5A9900E27011 /* DA_ScrollView.mm in Sources */,
 				4FF9BE0D17FE5A9900E27011 /* DynamicAnimator.mm in Sources */,

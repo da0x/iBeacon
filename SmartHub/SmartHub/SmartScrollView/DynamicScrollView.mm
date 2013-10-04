@@ -33,7 +33,7 @@
 
 -(void)prepareIntro
 {
-    [self setContentOffset:CGPointMake( -self.frame.size.width, 0 )];
+    [self setContentOffset:CGPointMake( -self.frame.size.width, 0 ) animated:false];
 }
 -(void)animateIntro
 {
@@ -93,7 +93,7 @@
 
 -(void)scrollToPage:(int)page
 {
-    [self setContentOffset:CGPointMake(page*self.frame.size.width, 0) animated:true];
+    [self setContentOffset:CGPointMake(page*self.frame.size.height, 0) animated:true];
 }
 
 @end

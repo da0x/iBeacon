@@ -11,4 +11,6 @@
 @interface SmartView : UIView
 -(void)prepareIntro;
 -(void)animateIntro;
+
+-(void)scrollToPage:(int)page;
 @end

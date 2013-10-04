@@ -48,5 +48,9 @@
     [self.scrollView animateIntro];
 }
 
+-(void)scrollToPage:(int)page
+{
+    [self.scrollView scrollToPage:page];
+}
 
 @end

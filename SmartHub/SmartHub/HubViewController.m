@@ -7,12 +7,15 @@
 //
 
 #import "HubViewController.h"
+#import "SmartView.h"
 #import "SmartWelcomeView.h"
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
 @interface HubViewController ()
 @property bool welcomeDisplayed;
+@property int page;
+@property int pageFactor;
 @end
 
 @implementation HubViewController
@@ -21,6 +24,7 @@
 {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.pageFactor = -1;
     
     serverAddress.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     serverAddress.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
@@ -32,12 +36,34 @@
 	[NSThread detachNewThreadSelector:@selector(listenAndRepeat:) toTarget:self withObject:nil];
 	[NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     
-    timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:true];
+    timer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(tick) userInfo:nil repeats:true];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    CATransform3D transform = CATransform3DMakeRotation(3*M_PI_2, 0, 0, 1);
+    
+    [self.view.layer setTransform:transform];
+    for(UIView *view in self.view.subviews){
+        view.layer.transform = transform;
+    }
+}
+
+- (void)restartSlides
+{
+    [(SmartView*)self.view prepareIntro];
+    [(SmartView*)self.view performSelector:@selector(animateIntro) withObject:nil afterDelay:.2];
 }
 
 - (void)tick
 {
-    NSLog(@"Tick");
+    if( self.page >= 3 || self.page <= 0 )
+    {
+        self.pageFactor = self.pageFactor * -1;
+    }
+    
+    self.page = self.page + self.pageFactor;
+
+    [(SmartView*)self.view scrollToPage:self.page];
+    
 }
 
 - (IBAction)toggleServerAddressHidden:(id)sender
