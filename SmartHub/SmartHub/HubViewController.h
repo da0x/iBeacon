@@ -12,11 +12,13 @@
 
 @interface HubViewController : UIViewController
 {
-    IBOutlet UILabel *serverAddress;
+    IBOutlet UIButton *serverAddress;
     
     FastServerSocket *server;
     
     NSTimer *timer;
 }
+
+- (IBAction)toggleServerAddressHidden:(id)sender;
 
 @end
