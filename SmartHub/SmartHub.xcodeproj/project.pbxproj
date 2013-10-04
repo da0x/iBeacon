@@ -21,16 +21,16 @@
 		4FF9BDBA17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
 		4FF9BDC217FE2D3000E27011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDC017FE2D3000E27011 /* InfoPlist.strings */; };
 		4FF9BDC417FE2D3000E27011 /* SmartHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDC317FE2D3000E27011 /* SmartHubTests.m */; };
-		4FF9BDDC17FE2DC100E27011 /* DA_Animator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */; };
-		4FF9BDDD17FE2DC100E27011 /* DA_ScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */; };
-		4FF9BDDE17FE2DC100E27011 /* DA_View.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD317FE2DC100E27011 /* DA_View.mm */; };
-		4FF9BDDF17FE2DC100E27011 /* FullscreenBounceAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */; };
-		4FF9BDE217FE2DC100E27011 /* ThumbnailAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */; };
 		4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE417FE2EB500E27011 /* WeatherView.xib */; };
-		4FF9BDE717FE2EFD00E27011 /* AwesomenessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */; };
-		4FF9BDEE17FE316300E27011 /* DynamicAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */; };
-		4FF9BDEF17FE316300E27011 /* DynamicScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */; };
-		4FF9BDF017FE316300E27011 /* SmartView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDED17FE316300E27011 /* SmartView.mm */; };
+		4FF9BE0A17FE5A9900E27011 /* DA_Animator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDFB17FE5A9900E27011 /* DA_Animator.mm */; };
+		4FF9BE0B17FE5A9900E27011 /* DA_ScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDFD17FE5A9900E27011 /* DA_ScrollView.mm */; };
+		4FF9BE0C17FE5A9900E27011 /* DA_View.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BDFF17FE5A9900E27011 /* DA_View.mm */; };
+		4FF9BE0D17FE5A9900E27011 /* DynamicAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0117FE5A9900E27011 /* DynamicAnimator.mm */; };
+		4FF9BE0E17FE5A9900E27011 /* DynamicScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0317FE5A9900E27011 /* DynamicScrollView.mm */; };
+		4FF9BE0F17FE5A9900E27011 /* FullscreenBounceAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0517FE5A9900E27011 /* FullscreenBounceAnimator.mm */; };
+		4FF9BE1017FE5A9900E27011 /* SmartView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0717FE5A9900E27011 /* SmartView.mm */; };
+		4FF9BE1117FE5A9900E27011 /* ThumbnailAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0917FE5A9900E27011 /* ThumbnailAnimator.mm */; };
+		4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,24 +63,24 @@
 		4FF9BDBF17FE2D3000E27011 /* SmartHubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartHubTests-Info.plist"; sourceTree = "<group>"; };
 		4FF9BDC117FE2D3000E27011 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FF9BDC317FE2D3000E27011 /* SmartHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHubTests.m; sourceTree = "<group>"; };
-		4FF9BDCE17FE2DC100E27011 /* DA_Animator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_Animator.hpp; path = ../SmartScrollView/DA_Animator.hpp; sourceTree = "<group>"; };
-		4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_Animator.mm; path = ../SmartScrollView/DA_Animator.mm; sourceTree = "<group>"; };
-		4FF9BDD017FE2DC100E27011 /* DA_ScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_ScrollView.hpp; path = ../SmartScrollView/DA_ScrollView.hpp; sourceTree = "<group>"; };
-		4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_ScrollView.mm; path = ../SmartScrollView/DA_ScrollView.mm; sourceTree = "<group>"; };
-		4FF9BDD217FE2DC100E27011 /* DA_View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_View.hpp; path = ../SmartScrollView/DA_View.hpp; sourceTree = "<group>"; };
-		4FF9BDD317FE2DC100E27011 /* DA_View.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_View.mm; path = ../SmartScrollView/DA_View.mm; sourceTree = "<group>"; };
-		4FF9BDD417FE2DC100E27011 /* FullscreenBounceAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FullscreenBounceAnimator.hpp; path = ../SmartScrollView/FullscreenBounceAnimator.hpp; sourceTree = "<group>"; };
-		4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FullscreenBounceAnimator.mm; path = ../SmartScrollView/FullscreenBounceAnimator.mm; sourceTree = "<group>"; };
-		4FF9BDDA17FE2DC100E27011 /* ThumbnailAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ThumbnailAnimator.hpp; path = ../SmartScrollView/ThumbnailAnimator.hpp; sourceTree = "<group>"; };
-		4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThumbnailAnimator.mm; path = ../SmartScrollView/ThumbnailAnimator.mm; sourceTree = "<group>"; };
 		4FF9BDE417FE2EB500E27011 /* WeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherView.xib; path = SmartHub/WeatherView.xib; sourceTree = "<group>"; };
-		4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AwesomenessView.xib; sourceTree = "<group>"; };
-		4FF9BDE817FE316300E27011 /* DynamicAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicAnimator.hpp; path = ../SmartScrollView/DynamicAnimator.hpp; sourceTree = "<group>"; };
-		4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicAnimator.mm; path = ../SmartScrollView/DynamicAnimator.mm; sourceTree = "<group>"; };
-		4FF9BDEA17FE316300E27011 /* DynamicScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicScrollView.hpp; path = ../SmartScrollView/DynamicScrollView.hpp; sourceTree = "<group>"; };
-		4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicScrollView.mm; path = ../SmartScrollView/DynamicScrollView.mm; sourceTree = "<group>"; };
-		4FF9BDEC17FE316300E27011 /* SmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartView.h; path = ../SmartScrollView/SmartView.h; sourceTree = "<group>"; };
-		4FF9BDED17FE316300E27011 /* SmartView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartView.mm; path = ../SmartScrollView/SmartView.mm; sourceTree = "<group>"; };
+		4FF9BDFA17FE5A9900E27011 /* DA_Animator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_Animator.hpp; path = SmartHub/SmartScrollView/DA_Animator.hpp; sourceTree = "<group>"; };
+		4FF9BDFB17FE5A9900E27011 /* DA_Animator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_Animator.mm; path = SmartHub/SmartScrollView/DA_Animator.mm; sourceTree = "<group>"; };
+		4FF9BDFC17FE5A9900E27011 /* DA_ScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_ScrollView.hpp; path = SmartHub/SmartScrollView/DA_ScrollView.hpp; sourceTree = "<group>"; };
+		4FF9BDFD17FE5A9900E27011 /* DA_ScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_ScrollView.mm; path = SmartHub/SmartScrollView/DA_ScrollView.mm; sourceTree = "<group>"; };
+		4FF9BDFE17FE5A9900E27011 /* DA_View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DA_View.hpp; path = SmartHub/SmartScrollView/DA_View.hpp; sourceTree = "<group>"; };
+		4FF9BDFF17FE5A9900E27011 /* DA_View.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DA_View.mm; path = SmartHub/SmartScrollView/DA_View.mm; sourceTree = "<group>"; };
+		4FF9BE0017FE5A9900E27011 /* DynamicAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicAnimator.hpp; path = SmartHub/SmartScrollView/DynamicAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BE0117FE5A9900E27011 /* DynamicAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicAnimator.mm; path = SmartHub/SmartScrollView/DynamicAnimator.mm; sourceTree = "<group>"; };
+		4FF9BE0217FE5A9900E27011 /* DynamicScrollView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DynamicScrollView.hpp; path = SmartHub/SmartScrollView/DynamicScrollView.hpp; sourceTree = "<group>"; };
+		4FF9BE0317FE5A9900E27011 /* DynamicScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DynamicScrollView.mm; path = SmartHub/SmartScrollView/DynamicScrollView.mm; sourceTree = "<group>"; };
+		4FF9BE0417FE5A9900E27011 /* FullscreenBounceAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FullscreenBounceAnimator.hpp; path = SmartHub/SmartScrollView/FullscreenBounceAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BE0517FE5A9900E27011 /* FullscreenBounceAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FullscreenBounceAnimator.mm; path = SmartHub/SmartScrollView/FullscreenBounceAnimator.mm; sourceTree = "<group>"; };
+		4FF9BE0617FE5A9900E27011 /* SmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartView.h; path = SmartHub/SmartScrollView/SmartView.h; sourceTree = "<group>"; };
+		4FF9BE0717FE5A9900E27011 /* SmartView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SmartView.mm; path = SmartHub/SmartScrollView/SmartView.mm; sourceTree = "<group>"; };
+		4FF9BE0817FE5A9900E27011 /* ThumbnailAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ThumbnailAnimator.hpp; path = SmartHub/SmartScrollView/ThumbnailAnimator.hpp; sourceTree = "<group>"; };
+		4FF9BE0917FE5A9900E27011 /* ThumbnailAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThumbnailAnimator.mm; path = SmartHub/SmartScrollView/ThumbnailAnimator.mm; sourceTree = "<group>"; };
+		4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AwesomenessView.xib; path = SmartHub/AwesomenessView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,22 +185,22 @@
 		4FF9BDCD17FE2DAB00E27011 /* SmartScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				4FF9BDE817FE316300E27011 /* DynamicAnimator.hpp */,
-				4FF9BDE917FE316300E27011 /* DynamicAnimator.mm */,
-				4FF9BDEA17FE316300E27011 /* DynamicScrollView.hpp */,
-				4FF9BDEB17FE316300E27011 /* DynamicScrollView.mm */,
-				4FF9BDEC17FE316300E27011 /* SmartView.h */,
-				4FF9BDED17FE316300E27011 /* SmartView.mm */,
-				4FF9BDCE17FE2DC100E27011 /* DA_Animator.hpp */,
-				4FF9BDCF17FE2DC100E27011 /* DA_Animator.mm */,
-				4FF9BDD017FE2DC100E27011 /* DA_ScrollView.hpp */,
-				4FF9BDD117FE2DC100E27011 /* DA_ScrollView.mm */,
-				4FF9BDD217FE2DC100E27011 /* DA_View.hpp */,
-				4FF9BDD317FE2DC100E27011 /* DA_View.mm */,
-				4FF9BDD417FE2DC100E27011 /* FullscreenBounceAnimator.hpp */,
-				4FF9BDD517FE2DC100E27011 /* FullscreenBounceAnimator.mm */,
-				4FF9BDDA17FE2DC100E27011 /* ThumbnailAnimator.hpp */,
-				4FF9BDDB17FE2DC100E27011 /* ThumbnailAnimator.mm */,
+				4FF9BDFA17FE5A9900E27011 /* DA_Animator.hpp */,
+				4FF9BDFB17FE5A9900E27011 /* DA_Animator.mm */,
+				4FF9BDFC17FE5A9900E27011 /* DA_ScrollView.hpp */,
+				4FF9BDFD17FE5A9900E27011 /* DA_ScrollView.mm */,
+				4FF9BDFE17FE5A9900E27011 /* DA_View.hpp */,
+				4FF9BDFF17FE5A9900E27011 /* DA_View.mm */,
+				4FF9BE0017FE5A9900E27011 /* DynamicAnimator.hpp */,
+				4FF9BE0117FE5A9900E27011 /* DynamicAnimator.mm */,
+				4FF9BE0217FE5A9900E27011 /* DynamicScrollView.hpp */,
+				4FF9BE0317FE5A9900E27011 /* DynamicScrollView.mm */,
+				4FF9BE0417FE5A9900E27011 /* FullscreenBounceAnimator.hpp */,
+				4FF9BE0517FE5A9900E27011 /* FullscreenBounceAnimator.mm */,
+				4FF9BE0617FE5A9900E27011 /* SmartView.h */,
+				4FF9BE0717FE5A9900E27011 /* SmartView.mm */,
+				4FF9BE0817FE5A9900E27011 /* ThumbnailAnimator.hpp */,
+				4FF9BE0917FE5A9900E27011 /* ThumbnailAnimator.mm */,
 			);
 			name = SmartScrollView;
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 		4FF9BDE317FE2E5600E27011 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */,
 				4FF9BDE417FE2EB500E27011 /* WeatherView.xib */,
-				4FF9BDE617FE2EFD00E27011 /* AwesomenessView.xib */,
 			);
 			name = Screens;
 			path = ..;
@@ -296,7 +296,7 @@
 				4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */,
 				4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */,
 				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
-				4FF9BDE717FE2EFD00E27011 /* AwesomenessView.xib in Resources */,
+				4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,17 +315,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF9BE1017FE5A9900E27011 /* SmartView.mm in Sources */,
 				4FF9BDA917FE2D3000E27011 /* HubAppDelegate.m in Sources */,
-				4FF9BDDF17FE2DC100E27011 /* FullscreenBounceAnimator.mm in Sources */,
-				4FF9BDDC17FE2DC100E27011 /* DA_Animator.mm in Sources */,
+				4FF9BE0A17FE5A9900E27011 /* DA_Animator.mm in Sources */,
 				4FF9BDAF17FE2D3000E27011 /* HubViewController.m in Sources */,
-				4FF9BDEE17FE316300E27011 /* DynamicAnimator.mm in Sources */,
-				4FF9BDEF17FE316300E27011 /* DynamicScrollView.mm in Sources */,
-				4FF9BDE217FE2DC100E27011 /* ThumbnailAnimator.mm in Sources */,
-				4FF9BDF017FE316300E27011 /* SmartView.mm in Sources */,
-				4FF9BDDE17FE2DC100E27011 /* DA_View.mm in Sources */,
+				4FF9BE0F17FE5A9900E27011 /* FullscreenBounceAnimator.mm in Sources */,
+				4FF9BE0E17FE5A9900E27011 /* DynamicScrollView.mm in Sources */,
+				4FF9BE0C17FE5A9900E27011 /* DA_View.mm in Sources */,
 				4FF9BDA517FE2D3000E27011 /* main.m in Sources */,
-				4FF9BDDD17FE2DC100E27011 /* DA_ScrollView.mm in Sources */,
+				4FF9BE1117FE5A9900E27011 /* ThumbnailAnimator.mm in Sources */,
+				4FF9BE0B17FE5A9900E27011 /* DA_ScrollView.mm in Sources */,
+				4FF9BE0D17FE5A9900E27011 /* DynamicAnimator.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +536,7 @@
 				4FF9BDC917FE2D3000E27011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FF9BDCA17FE2D3000E27011 /* Build configuration list for PBXNativeTarget "SmartHubTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				4FF9BDCC17FE2D3000E27011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
