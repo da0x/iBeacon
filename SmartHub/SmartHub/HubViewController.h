@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FastServerSocket.h"
+#import "FastSocket.h"
 
 @interface HubViewController : UIViewController
+{
+    IBOutlet UILabel *serverAddress;
+    
+    FastServerSocket *server;
+}
 
 @end

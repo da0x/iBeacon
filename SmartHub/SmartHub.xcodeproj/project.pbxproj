@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1473288B17FE61B9004FA7FE /* FastServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288817FE61B9004FA7FE /* FastServerSocket.m */; };
+		1473288C17FE61B9004FA7FE /* FastSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288A17FE61B9004FA7FE /* FastSocket.m */; };
 		4FF9BD9917FE2D3000E27011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9817FE2D3000E27011 /* Foundation.framework */; };
 		4FF9BD9B17FE2D3000E27011 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */; };
 		4FF9BD9D17FE2D3000E27011 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF9BD9C17FE2D3000E27011 /* UIKit.framework */; };
@@ -47,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1473288717FE61B9004FA7FE /* FastServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastServerSocket.h; sourceTree = "<group>"; };
+		1473288817FE61B9004FA7FE /* FastServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastServerSocket.m; sourceTree = "<group>"; };
+		1473288917FE61B9004FA7FE /* FastSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSocket.h; sourceTree = "<group>"; };
+		1473288A17FE61B9004FA7FE /* FastSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSocket.m; sourceTree = "<group>"; };
 		4FF9BD9517FE2D3000E27011 /* SmartHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF9BD9817FE2D3000E27011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FF9BD9A17FE2D3000E27011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				4FF9BDE317FE2E5600E27011 /* Screens */,
+				1473288717FE61B9004FA7FE /* FastServerSocket.h */,
+				1473288817FE61B9004FA7FE /* FastServerSocket.m */,
+				1473288917FE61B9004FA7FE /* FastSocket.h */,
+				1473288A17FE61B9004FA7FE /* FastSocket.m */,
 				4FF9BDA717FE2D3000E27011 /* HubAppDelegate.h */,
 				4FF9BDA817FE2D3000E27011 /* HubAppDelegate.m */,
 				4FF9BDAA17FE2D3000E27011 /* Main.storyboard */,
@@ -338,8 +348,10 @@
 				4FF9BE1017FE5A9900E27011 /* SmartView.mm in Sources */,
 				4FF9BDA917FE2D3000E27011 /* HubAppDelegate.m in Sources */,
 				4FF9BE0A17FE5A9900E27011 /* DA_Animator.mm in Sources */,
+				1473288B17FE61B9004FA7FE /* FastServerSocket.m in Sources */,
 				4FF9BDAF17FE2D3000E27011 /* HubViewController.m in Sources */,
 				4FF9BE0F17FE5A9900E27011 /* FullscreenBounceAnimator.mm in Sources */,
+				1473288C17FE61B9004FA7FE /* FastSocket.m in Sources */,
 				4FF9BE0E17FE5A9900E27011 /* DynamicScrollView.mm in Sources */,
 				4FF9BE0C17FE5A9900E27011 /* DA_View.mm in Sources */,
 				4FF9BDA517FE2D3000E27011 /* main.m in Sources */,

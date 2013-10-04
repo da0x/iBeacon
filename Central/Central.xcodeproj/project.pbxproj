@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1473289217FE636A004FA7FE /* FastServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473288E17FE636A004FA7FE /* FastServerSocket.m */; };
+		1473289317FE636A004FA7FE /* FastSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473289017FE636A004FA7FE /* FastSocket.m */; };
 		4F47B40617F5DAD700F706A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47B40517F5DAD700F706A7 /* Foundation.framework */; };
 		4F47B40817F5DAD700F706A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47B40717F5DAD700F706A7 /* CoreGraphics.framework */; };
 		4F47B40A17F5DAD700F706A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47B40917F5DAD700F706A7 /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1473288D17FE636A004FA7FE /* FastServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastServerSocket.h; sourceTree = "<group>"; };
+		1473288E17FE636A004FA7FE /* FastServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastServerSocket.m; sourceTree = "<group>"; };
+		1473288F17FE636A004FA7FE /* FastSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSocket.h; sourceTree = "<group>"; };
+		1473289017FE636A004FA7FE /* FastSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSocket.m; sourceTree = "<group>"; };
 		4F47B40217F5DAD700F706A7 /* Central.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Central.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F47B40517F5DAD700F706A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F47B40717F5DAD700F706A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +123,10 @@
 		4FE5EEB717F9B78A00C0BA8C /* Central */ = {
 			isa = PBXGroup;
 			children = (
+				1473288D17FE636A004FA7FE /* FastServerSocket.h */,
+				1473288E17FE636A004FA7FE /* FastServerSocket.m */,
+				1473288F17FE636A004FA7FE /* FastSocket.h */,
+				1473289017FE636A004FA7FE /* FastSocket.m */,
 				4FE5EEB817F9B78A00C0BA8C /* Main-iPad.storyboard */,
 				4FE5EEBA17F9B78A00C0BA8C /* Main.storyboard */,
 				4FE5EEBC17F9B78A00C0BA8C /* Central-Info.plist */,
@@ -182,7 +192,7 @@
 				ORGANIZATIONNAME = "Daher Alfawares";
 				TargetAttributes = {
 					4F47B40117F5DAD700F706A7 = {
-						DevelopmentTeam = N2YJW3P87B;
+						DevelopmentTeam = LS2EX7B462;
 					};
 					4F47B42217F5DAD700F706A7 = {
 						TestTargetID = 4F47B40117F5DAD700F706A7;
@@ -235,8 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE5EECB17F9B78A00C0BA8C /* ExplorerAppDelegate.m in Sources */,
+				1473289317FE636A004FA7FE /* FastSocket.m in Sources */,
 				4FE5EECE17F9B78A00C0BA8C /* main.m in Sources */,
 				4FE5EECC17F9B78A00C0BA8C /* ExplorerViewController.mm in Sources */,
+				1473289217FE636A004FA7FE /* FastServerSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

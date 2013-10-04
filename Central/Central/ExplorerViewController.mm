@@ -136,12 +136,70 @@
     self.explorer = [[Explorer alloc] initWithUUID:@"91295548-F1E9-41F3-851D-075DCDF192B9"];
     self.explorer.distanceLabel1 = self.distance1;
     self.explorer.distanceLabel2 = self.distance2;
+    
+//    NSString *ipAddress = address.text;
+//    
+//    if(ipAddress == nil ||
+//       [ipAddress isEqualToString:@""])
+//    {
+//        ipAddress = @"192.168.10.114";
+//    }
+//    
+//    client = [[FastSocket alloc] initWithHost:ipAddress andPort:@"35000"];
+//    
+//    [client connect];
+    
+//    if([client isConnected])
+//    {
+//        char *bytes = "test";
+//        [client sendBytes:bytes count:strlen(bytes)+1];
+//    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [client close];
+    client = nil;
+}
+
+- (IBAction)userNear:(id)sender
+{
+    if(client == nil ||
+       ![client isConnected])
+    {
+        client = [[FastSocket alloc] initWithHost:address.text andPort:@"35000"];
+        
+        [client connect];
+    }
+    
+    if([client isConnected])
+    {
+        char *bytes = "distance:0";
+        [client sendBytes:bytes count:strlen(bytes)+1];
+    }
+}
+
+- (IBAction)userAway:(id)sender
+{
+    if(client == nil ||
+       ![client isConnected])
+    {
+        client = [[FastSocket alloc] initWithHost:address.text andPort:@"35000"];
+        
+        [client connect];
+    }
+    
+    if([client isConnected])
+    {
+        char *bytes = "distance:1";
+        [client sendBytes:bytes count:strlen(bytes)+1];
+    }
 }
 
 @end
