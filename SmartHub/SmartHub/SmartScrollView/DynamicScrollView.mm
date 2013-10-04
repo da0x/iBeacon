@@ -75,7 +75,7 @@
     [self addView:view];
     
     // ready, add it to super.
-    DA::DynamicAnimator* animator_pointer = new DA::DynamicAnimator( view, self.uianimator, DA::DynamicAnimator::Speed::Slow );
+    DA::DynamicAnimator* animator_pointer = new DA::DynamicAnimator( view, self.uianimator, DA::DynamicAnimator::Speed::Fast );
     
     dynamicAnimator.add( DA::View::pointer_type( animator_pointer ) );
     dynamicAnimator.activate();

@@ -21,7 +21,7 @@
 @implementation SmartView
 
 -(void)addViewFromNibNamed:(NSString*)name
-{   
+{
     UIView* page = [[[NSBundle mainBundle] loadNibNamed:name owner:self options:nil] objectAtIndex:0];
     [self.scrollView addDynamicView:page];
     [self.largeLocationButton setHidden:YES];

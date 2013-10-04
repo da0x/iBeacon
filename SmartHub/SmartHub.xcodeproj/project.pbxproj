@@ -31,6 +31,9 @@
 		4FF9BE1017FE5A9900E27011 /* SmartView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0717FE5A9900E27011 /* SmartView.mm */; };
 		4FF9BE1117FE5A9900E27011 /* ThumbnailAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9BE0917FE5A9900E27011 /* ThumbnailAnimator.mm */; };
 		4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */; };
+		4FF9BE1E17FE678000E27011 /* Partly-Cloudy-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */; };
+		4FF9BE1F17FE678000E27011 /* RyanS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BE1C17FE678000E27011 /* RyanS.jpg */; };
+		4FF9BE2017FE678000E27011 /* solsticelogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9BE1D17FE678000E27011 /* solsticelogo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		4FF9BE0817FE5A9900E27011 /* ThumbnailAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ThumbnailAnimator.hpp; path = SmartHub/SmartScrollView/ThumbnailAnimator.hpp; sourceTree = "<group>"; };
 		4FF9BE0917FE5A9900E27011 /* ThumbnailAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThumbnailAnimator.mm; path = SmartHub/SmartScrollView/ThumbnailAnimator.mm; sourceTree = "<group>"; };
 		4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AwesomenessView.xib; path = SmartHub/AwesomenessView.xib; sourceTree = "<group>"; };
+		4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Partly-Cloudy-icon.png"; path = "SmartHub/images/Partly-Cloudy-icon.png"; sourceTree = "<group>"; };
+		4FF9BE1C17FE678000E27011 /* RyanS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RyanS.jpg; path = SmartHub/images/RyanS.jpg; sourceTree = "<group>"; };
+		4FF9BE1D17FE678000E27011 /* solsticelogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "solsticelogo@2x.png"; path = "SmartHub/images/solsticelogo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,11 +214,22 @@
 		4FF9BDE317FE2E5600E27011 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4FF9BE1A17FE677400E27011 /* Images */,
 				4FF9BE1217FE5AC600E27011 /* AwesomenessView.xib */,
 				4FF9BDE417FE2EB500E27011 /* WeatherView.xib */,
 			);
 			name = Screens;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4FF9BE1A17FE677400E27011 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9BE1B17FE678000E27011 /* Partly-Cloudy-icon.png */,
+				4FF9BE1C17FE678000E27011 /* RyanS.jpg */,
+				4FF9BE1D17FE678000E27011 /* solsticelogo@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF9BDB117FE2D3000E27011 /* Images.xcassets in Resources */,
+				4FF9BE1F17FE678000E27011 /* RyanS.jpg in Resources */,
 				4FF9BDA317FE2D3000E27011 /* InfoPlist.strings in Resources */,
 				4FF9BDAC17FE2D3000E27011 /* Main.storyboard in Resources */,
 				4FF9BDE517FE2EB500E27011 /* WeatherView.xib in Resources */,
+				4FF9BE1E17FE678000E27011 /* Partly-Cloudy-icon.png in Resources */,
 				4FF9BE1417FE5AC600E27011 /* AwesomenessView.xib in Resources */,
+				4FF9BE2017FE678000E27011 /* solsticelogo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
