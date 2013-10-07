@@ -36,6 +36,7 @@
 		14BD7ACD17FF254B00D4F84A /* LincolnPark.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BD7AB717FF254B00D4F84A /* LincolnPark.png */; };
 		14BD7ACE17FF254B00D4F84A /* LincolnPark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BD7AB817FF254B00D4F84A /* LincolnPark@2x.png */; };
 		14BD7ACF17FF254B00D4F84A /* RiverEast.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BD7AB917FF254B00D4F84A /* RiverEast.png */; };
+		4F2DA20317FF339700FA0FE5 /* robbie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F2DA20217FF339700FA0FE5 /* robbie.jpg */; };
 		4F86097417FE75910041D168 /* JohnW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097317FE75910041D168 /* JohnW.jpg */; };
 		4F86097717FEF1090041D168 /* Meetings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097517FEF1090041D168 /* Meetings.xib */; };
 		4F86097817FEF1090041D168 /* Twitter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86097617FEF1090041D168 /* Twitter.xib */; };
@@ -118,6 +119,7 @@
 		14BD7AB717FF254B00D4F84A /* LincolnPark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LincolnPark.png; sourceTree = "<group>"; };
 		14BD7AB817FF254B00D4F84A /* LincolnPark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LincolnPark@2x.png"; sourceTree = "<group>"; };
 		14BD7AB917FF254B00D4F84A /* RiverEast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RiverEast.png; sourceTree = "<group>"; };
+		4F2DA20217FF339700FA0FE5 /* robbie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robbie.jpg; path = SmartHub/images/robbie.jpg; sourceTree = "<group>"; };
 		4F86097317FE75910041D168 /* JohnW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JohnW.jpg; path = SmartHub/images/JohnW.jpg; sourceTree = "<group>"; };
 		4F86097517FEF1090041D168 /* Meetings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Meetings.xib; path = SmartHub/Meetings.xib; sourceTree = "<group>"; };
 		4F86097617FEF1090041D168 /* Twitter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Twitter.xib; path = SmartHub/Twitter.xib; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 		4FF9BE1A17FE677400E27011 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F2DA20217FF339700FA0FE5 /* robbie.jpg */,
 				4F86098817FF27FB0041D168 /* New-York-City-Skyline.jpg */,
 				14BD7AA417FF254B00D4F84A /* Hotdog.png */,
 				14BD7AA517FF254B00D4F84A /* Hotdog@2x.png */,
@@ -476,6 +479,7 @@
 				14BD7AC917FF254B00D4F84A /* SouthLoop@2x.png in Resources */,
 				14BD7AC217FF254B00D4F84A /* Engineering.png in Resources */,
 				4FF9BE1417FE5AC600E27011 /* EmployeeSpotlightView.xib in Resources */,
+				4F2DA20317FF339700FA0FE5 /* robbie.jpg in Resources */,
 				4FF9BE2017FE678000E27011 /* solsticelogo@2x.png in Resources */,
 				4F86097717FEF1090041D168 /* Meetings.xib in Resources */,
 				14BD7ABD17FF254B00D4F84A /* FrontRoom@2x.png in Resources */,

@@ -168,9 +168,6 @@
 
 -(void)tick
 {
-    if( self.explorer.proximity == CLProximityUnknown )
-        return;
-    
     if( self.explorer.proximity == CLProximityImmediate || self.explorer.proximity == CLProximityNear )
     {
         [self userNear:nil];
