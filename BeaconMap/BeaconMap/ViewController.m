@@ -151,40 +151,22 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if ([touches count] == 1) {
-        // one finger
-        CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
-        
-        for (UILabel *label in self.view.subviews) {
-            if (CGRectContainsPoint(label.frame, touchPoint)) {
-                
-                label.center = CGPointMake(touchPoint.x, touchPoint.y);
-                label.frame = CGRectInset(label.frame, -10, -10);
-            }
-        }
-    }
+    [self moveLabelWithTouches:touches withLabelInset:-10];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-
-    if ([touches count] == 1) {
-        // one finger
-        CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
-        
-        for (UILabel *label in self.view.subviews) {
-            if (CGRectContainsPoint(label.frame, touchPoint)) {
-                
-                label.center = CGPointMake(touchPoint.x, touchPoint.y);
-                
-            }
-        }
-    }
+    [self moveLabelWithTouches:touches withLabelInset:0];
 }
-
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [self moveLabelWithTouches:touches withLabelInset:10];
+}
+
+
+- (void)moveLabelWithTouches:(NSSet *)touches withLabelInset:(CGFloat)inset {
+    
     if ([touches count] == 1) {
         // one finger
         CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
@@ -193,8 +175,8 @@
             if (CGRectContainsPoint(label.frame, touchPoint)) {
                 
                 label.center = CGPointMake(touchPoint.x, touchPoint.y);
-                label.frame = CGRectInset(label.frame, 10, 10);
-
+                label.frame = CGRectInset(label.frame, inset, inset);
+                
             }
         }
     }
