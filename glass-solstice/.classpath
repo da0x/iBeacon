@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-api-client-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-api-client-appengine-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-api-client-servlet-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-api-services-mirror-v1-rev18-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-http-client-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-http-client-appengine-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-http-client-gson-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-http-client-jackson-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-http-client-jackson2-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-oauth-client-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-oauth-client-appengine-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/google-oauth-client-servlet-1.15.0-rc.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/gson-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/jackson-core-asl-1.9.11.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/jackson-mapper-asl-1.9.11.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/henryoyuela/Documents/workspace/glass-solstice/glass-solstice/lib/guava-14.0.1.jar"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

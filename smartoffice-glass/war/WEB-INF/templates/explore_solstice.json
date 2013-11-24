@@ -1,0 +1,19 @@
+{
+    "kind": "mirror#timelineItem",
+    "bundleId": "explore_solstice",
+    "sourceItemId": "explore-solstice-bundle",
+    "isBundleCover": false,
+    "menuItems": [
+        {
+            "id": "learn_more",
+            "action": "PLAY_VIDEO",
+            "values": [
+                {
+                    "displayName": "Learn More",
+                    "iconUrl": "http://glass-sols-only.appspot.com/static/images/goldenhourvideo.png"
+                }
+            ],
+            "payload": "http://glass-sols-only.appspot.com/static/video/Googleglass_Northernvideo.m4v"
+        }
+    ]
+}

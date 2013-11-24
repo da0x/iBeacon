@@ -1,0 +1,6 @@
+{
+    "kind": "mirror#timelineItem",
+    "bundleId": "my_info",
+    "sourceItemId": "my-info-bundle",
+    "isBundleCover": false
+}

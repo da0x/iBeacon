@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+  
+  <!-- filters -->
+  <filter>
+    <filter-name>authFilter</filter-name>
+    <filter-class>com.solstice.glass.auth.AuthFilter</filter-class>
+  </filter>       
+  <filter-mapping>
+    <filter-name>authFilter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.solstice_mobile.smartoffice.SmartOfficeGlassServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/glassxface</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>dashxface</servlet-name>
+    <servlet-class>com.solstice_mobile.smartoffice.DashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashxface</servlet-name>
+    <url-pattern>/dashxface</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

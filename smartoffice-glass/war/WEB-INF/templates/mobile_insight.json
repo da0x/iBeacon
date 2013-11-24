@@ -1,0 +1,13 @@
+{
+    "kind": "mirror#timelineItem",
+    "sourceItemId": "mobile-insight",
+    "isBundleCover": false,
+    "menuItems": [
+        {
+            "id": "learn_more",
+            "action": "OPEN_URI",
+            "payload": "http://www.solstice-mobile.com/newsletter.html"
+           
+        } 
+	]
+}

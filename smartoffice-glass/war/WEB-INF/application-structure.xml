@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<solstice:application xmlns:solstice="http://www.solstice-mobile.com/"
+     name="SmartOffice-Glass"
+     callbackUrl="/glassxface"
+     clientID="492068980104.apps.googleusercontent.com" 
+     clientSecret="GTBIC4Or4P4aHQCXffXJOFjE" 
+     templatePath="WEB-INF/templates/" 
+     htmlPath="WEB-INF/html/" >
+     
+    <solstice:scope value="https://www.googleapis.com/auth/glass.timeline" />
+ 	<solstice:scope value="https://www.googleapis.com/auth/glass.location" />
+    <solstice:scope value="https://www.googleapis.com/auth/userinfo.profile" />
+    
+    <solstice:template id="my_info" html="my_info.html" body="my_info.json"/>
+    <solstice:template id="explore_solstice" html="explore_solstice.html" body="explore_solstice.json"/>
+    <solstice:template id="general_info" html="general_info.html" body="general_info.json"/>
+    <solstice:template id="welcome_card" html="welcome_cover.html" body="welcome_cover.json"/>
+    <solstice:template id="mobile_insight" html="mobile_insight.html" body="mobile_insight.json"/>
+    
+
+    
+</solstice:application>

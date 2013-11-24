@@ -1,0 +1,7 @@
+{
+    "kind": "mirror#timelineItem",
+    "bundleId": "welcome_card",
+    "sourceItemId": "smartoffice-welcome-bundle",
+    "isBundleCover": false
+     
+}
