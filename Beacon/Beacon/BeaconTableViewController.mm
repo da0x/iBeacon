@@ -1,12 +1,12 @@
 //
-//  BeaconTableViewTableViewController.m
+//  BeaconTableViewController.m
 //  Beacon
 //
 //  Created by Daher Alfawares on 12/20/13.
 //  Copyright (c) 2013 Daher Alfawares. All rights reserved.
 //
 
-#import "BeaconTableViewTableViewController.h"
+#import "BeaconTableViewController.h"
 #import "BeaconViewController.h"
 
 #include <map>
@@ -33,11 +33,11 @@ namespace global {
 
 
 
-@interface BeaconTableViewTableViewController ()
+@interface BeaconTableViewController ()
 
 @end
 
-@implementation BeaconTableViewTableViewController
+@implementation BeaconTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

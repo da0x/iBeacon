@@ -1,5 +1,5 @@
 //
-//  BeaconTableViewTableViewController.h
+//  BeaconTableViewController.h
 //  Beacon
 //
 //  Created by Daher Alfawares on 12/20/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BeaconTableViewTableViewController : UITableViewController
+@interface BeaconTableViewController : UITableViewController
 
 @end

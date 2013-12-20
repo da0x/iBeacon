@@ -11,8 +11,19 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "bluetooth2-120.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "50x50",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "50x50",
       "scale" : "2x"
     },
     {
@@ -24,6 +35,11 @@
       "idiom" : "mac",
       "size" : "16x16",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "size" : "32x32",
+      "scale" : "1x"
     },
     {
       "idiom" : "mac",
@@ -49,6 +65,11 @@
       "idiom" : "mac",
       "size" : "256x256",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "size" : "512x512",
+      "scale" : "1x"
     },
     {
       "idiom" : "mac",

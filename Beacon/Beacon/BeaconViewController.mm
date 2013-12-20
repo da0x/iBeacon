@@ -47,4 +47,9 @@
     }
 }
 
+-(IBAction)toggle:(id)sender
+{
+    [self.beaconSwitch setOn:![self.beaconSwitch isOn] animated:true];
+}
+
 @end
