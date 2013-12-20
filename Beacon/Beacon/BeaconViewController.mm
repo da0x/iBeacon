@@ -9,8 +9,8 @@
 #import "BeaconViewController.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <CoreLocation/CoreLocation.h>
-
 #include <map>
+
 
 @interface Beacon : NSObject<CBPeripheralManagerDelegate>
 @property CLBeaconRegion *beaconRegion;
@@ -19,22 +19,21 @@
 
 @implementation Beacon
 
--(id)initWithUUID:(NSString*)UUID
+-(id)initWithUUID:(std::string)UUID withMajor:(int)major withMinor:(int)minor
 {
     self = [super init];
     if(self)
     {
         // Beacon UUID
         NSUUID *proximityUUID = [[NSUUID alloc]
-                                 initWithUUIDString:UUID];
+                                 initWithUUIDString:[NSString stringWithUTF8String:UUID.c_str()]];
         
         // Create the beacon region.
         self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
-                                                                    major:2
+                                                                    major:major
+                                                                    minor:minor
                                                                identifier:@"com.solstice-mobile.meetup"];
-        
-        
-        
+                                 
         // Create the peripheral manager.
         self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:nil];
     }
@@ -71,10 +70,17 @@
     NSLog(@"Peripheral state: %s",states[[peripheral state]]);
 }
 
+-(void)dealloc
+{
+    [self stopAdvertizing];
+}
+
 @end
 
 @interface BeaconViewController ()
 @property Beacon* beacon;
+@property IBOutlet UISwitch* beaconSwitch;
+@property IBOutlet UIImageView* beaconLogo;
 @end
 
 @implementation BeaconViewController
@@ -84,14 +90,26 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.beacon = [[Beacon alloc] initWithUUID:@"91295548-F1E9-41F3-851D-075DCDF192B9"];
-    [self.beacon startAdvertizing];
+    self.beacon = [[Beacon alloc] initWithUUID:self.beaconUUID
+                                     withMajor:self.beaconMajor
+                                     withMinor:self.beaconMinor];
+    
+    self.title = [NSString stringWithUTF8String:self.beaconTitle.c_str()];
+    self.beaconLogo.image = [UIImage imageNamed:[NSString stringWithUTF8String:self.beaconImageName.c_str()]];
+    
+    [self.beaconSwitch addTarget:self action:@selector(switchChanged) forControlEvents:UIControlEventValueChanged];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)switchChanged
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if( [self.beaconSwitch isOn] )
+    {
+        [self.beacon startAdvertizing];
+    }
+    else
+    {
+        [self.beacon stopAdvertizing];
+    }
 }
 
 @end
