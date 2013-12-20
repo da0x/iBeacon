@@ -98,7 +98,7 @@ namespace global {
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     BeaconViewController* beaconViewController = [segue destinationViewController];
-    int row = [self.tableView indexPathForSelectedRow].row;
+    int row = static_cast<int>( [self.tableView indexPathForSelectedRow].row );
     
     beaconViewController.beaconUUID         = global::beacons[row].uuid;
     beaconViewController.beaconMajor        = global::beacons[row].major;
