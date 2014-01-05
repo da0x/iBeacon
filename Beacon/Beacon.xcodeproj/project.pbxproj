@@ -27,6 +27,7 @@
 		4F47B3EC17F5C3DF00F706A7 /* BeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F47B3EB17F5C3DF00F706A7 /* BeaconTests.m */; };
 		4F47B3F617F5C40E00F706A7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47B3F517F5C40E00F706A7 /* CoreBluetooth.framework */; };
 		4F47B3F817F5C7D500F706A7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47B3F717F5C7D500F706A7 /* CoreLocation.framework */; };
+		4FD8F01A1879E14500769320 /* discover_ibeacon_signal_gap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8F0191879E14500769320 /* discover_ibeacon_signal_gap@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		4F47B3EB17F5C3DF00F706A7 /* BeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconTests.m; sourceTree = "<group>"; };
 		4F47B3F517F5C40E00F706A7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4F47B3F717F5C7D500F706A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4FD8F0191879E14500769320 /* discover_ibeacon_signal_gap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover_ibeacon_signal_gap@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		4F05439A18648927003A95DA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4FD8F0191879E14500769320 /* discover_ibeacon_signal_gap@2x.png */,
 				4F05439B18648927003A95DA /* discover_ibeacon_signal_lowes@2x.png */,
 				4F05439C18648927003A95DA /* discover_ibeacon_signal_mcd@2x.png */,
 			);
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD8F01A1879E14500769320 /* discover_ibeacon_signal_gap@2x.png in Resources */,
 				4F47B3D917F5C3DF00F706A7 /* Images.xcassets in Resources */,
 				4F47B3CB17F5C3DF00F706A7 /* InfoPlist.strings in Resources */,
 				4F05439D18648927003A95DA /* discover_ibeacon_signal_lowes@2x.png in Resources */,

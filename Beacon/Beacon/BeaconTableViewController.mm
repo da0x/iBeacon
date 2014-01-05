@@ -24,11 +24,10 @@ namespace global {
         int minor;
     };
     std::vector<beacon_t> beacons = {
-        {"Lowes",       "discover_ibeacon_signal_lowes",    "360F40D6-1375-4877-93FB-E48249C95B29", 0, 0},
-        {"McDonald's",  "discover_ibeacon_signal_mcd",      "360F40D6-1375-4877-93FB-E48249C95B29", 1, 0}
+        {"Gap",         "discover_ibeacon_signal_gap",      "360F40D6-1375-4877-93FB-E48249C95B29", 0, 0},
+        {"McDonald's",  "discover_ibeacon_signal_mcd",      "360F40D6-1375-4877-93FB-E48249C95B29", 1, 0},
+        {"Lowes",       "discover_ibeacon_signal_lowes",    "360F40D6-1375-4877-93FB-E48249C95B29", 2, 0}
     };
-    
-    int current_beacon = 1;
 }
 
 

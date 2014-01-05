@@ -50,6 +50,7 @@
 -(IBAction)toggle:(id)sender
 {
     [self.beaconSwitch setOn:![self.beaconSwitch isOn] animated:true];
+    [self switchChanged];
 }
 
 @end
