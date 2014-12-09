@@ -8,83 +8,41 @@
 
 #import "BeaconTableViewController.h"
 #import "BeaconViewController.h"
-
-#include <map>
-#include <string>
-#include <vector>
+#import "BeaconDataSource.h"
 
 
-namespace global {
-    
-    struct beacon_t {
-        std::string name;
-        std::string image;
-        std::string uuid;
-        int major;
-        int minor;
-    };
-    std::vector<beacon_t> beacons = {
-        {"Gap",         "discover_ibeacon_signal_gap",      "360F40D6-1375-4877-93FB-E48249C95B29", 0, 0},
-        {"McDonald's",  "discover_ibeacon_signal_mcd",      "360F40D6-1375-4877-93FB-E48249C95B29", 1, 0},
-        {"Lowes",       "discover_ibeacon_signal_lowes",    "360F40D6-1375-4877-93FB-E48249C95B29", 2, 0}
-    };
-}
-
-
-
-@interface BeaconTableViewController ()
-
+@interface BeaconTableViewController()
+@property(nonatomic)         BeaconDataSource  *beacons;
+@property(nonatomic,retain)  UITableView       *tableView;
 @end
 
 @implementation BeaconTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+-(void)awakeFromNib
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.beacons = [[BeaconDataSource alloc] init];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return global::beacons.size();
+    return self.beacons.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        // View
+    UITableViewCell*  cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text         = [NSString stringWithUTF8String:global::beacons[indexPath.row].name.c_str()];
-    cell.detailTextLabel.text   = [NSString stringWithUTF8String:global::beacons[indexPath.row].uuid.c_str()];
+        // Model
+    BeaconInfo*       info = [self.beacons beaconInfoAtIndex:indexPath.row];
+    
+        // Controlling
+    cell.textLabel.text         = info.name;
+    cell.detailTextLabel.text   = info.uuid;
     
     return cell;
 }
@@ -93,17 +51,20 @@ namespace global {
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+        // View
     BeaconViewController* beaconViewController = [segue destinationViewController];
-    int row = static_cast<int>( [self.tableView indexPathForSelectedRow].row );
     
-    beaconViewController.beaconUUID         = global::beacons[row].uuid;
-    beaconViewController.beaconMajor        = global::beacons[row].major;
-    beaconViewController.beaconMinor        = global::beacons[row].minor;
-    beaconViewController.beaconTitle        = global::beacons[row].name;
-    beaconViewController.beaconImageName    = global::beacons[row].image;
+        // Model
+    BeaconInfo* info = [self.beacons beaconInfoAtIndex:[self.tableView indexPathForSelectedRow].row];
+    
+        // Controlling: set the beacon info.
+    beaconViewController.beaconTitle     = info.name;
+    beaconViewController.beaconImageName = info.image;
+    beaconViewController.beaconUUID      = info.uuid;
+    beaconViewController.beaconMajor     = info.major;
+    beaconViewController.beaconMinor     = info.minor;
 }
 
 

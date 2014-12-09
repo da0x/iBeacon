@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#include <string>
+
+@class BeaconInfo;
 
 @interface BeaconViewController : UIViewController
-@property std::string beaconUUID;
-@property std::string beaconTitle;
-@property std::string beaconImageName;
-@property int beaconMajor;
-@property int beaconMinor;
+
+@property (nonatomic) NSString* beaconUUID;
+@property (nonatomic) NSString* beaconTitle;
+@property (nonatomic) NSString* beaconImageName;
+@property (nonatomic) NSInteger beaconMajor;
+@property (nonatomic) NSInteger beaconMinor;
 @end

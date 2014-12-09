@@ -7,17 +7,12 @@
 //
 
 
-#import "BeaconViewController.h"
-#import <CoreBluetooth/CoreBluetooth.h>
-#import <CoreLocation/CoreLocation.h>
+#include <string>
 
 
-@interface Beacon : NSObject<CBPeripheralManagerDelegate>
-@property CLBeaconRegion *beaconRegion;
-@property CBPeripheralManager *peripheralManager;
+@interface Beacon : NSObject
 
-
--(id)initWithUUID:(std::string)UUID withMajor:(int)major withMinor:(int)minor;
+-(id)initWithUUID:(NSString*)UUID withMajor:(int)major withMinor:(int)minor;
 
 -(void)startAdvertizing;
 -(void)stopAdvertizing;

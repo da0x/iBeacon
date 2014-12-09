@@ -7,15 +7,15 @@
 //
 
 #import "BeaconViewController.h"
+#import "BeaconDataSource.h"
 #import "Beacon.h"
 
 
-
-
 @interface BeaconViewController ()
-@property Beacon* beacon;
-@property IBOutlet UISwitch* beaconSwitch;
-@property IBOutlet UIImageView* beaconLogo;
+
+@property          Beacon      * beacon;
+@property IBOutlet UISwitch    * beaconSwitch;
+@property IBOutlet UIImageView * beaconLogo;
 @end
 
 @implementation BeaconViewController
@@ -23,15 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    self.beacon = [[Beacon alloc] initWithUUID:self.beaconUUID
-                                     withMajor:self.beaconMajor
-                                     withMinor:self.beaconMinor];
+        // Model
+    self.beacon             = [[Beacon alloc] initWithUUID:self.beaconUUID withMajor:self.beaconMajor withMinor:self.beaconMinor];
     
-    self.title = [NSString stringWithUTF8String:self.beaconTitle.c_str()];
-    self.beaconLogo.image = [UIImage imageNamed:[NSString stringWithUTF8String:self.beaconImageName.c_str()]];
-    
+        // View
+    self.title              = self.beaconTitle;
+    self.beaconLogo.image   = [UIImage imageNamed:self.beaconImageName];
     [self.beaconSwitch addTarget:self action:@selector(switchChanged) forControlEvents:UIControlEventValueChanged];
 }
 
@@ -53,4 +51,12 @@
     [self switchChanged];
 }
 
+-(void)dealloc
+{
+        // Responsibility error.
+    [self.beacon stopAdvertizing];
+}
+
 @end
+
+

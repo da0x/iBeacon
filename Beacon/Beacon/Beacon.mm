@@ -7,26 +7,32 @@
 //
 
 #import "Beacon.h"
-#include <map>
+#import <map>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreLocation/CoreLocation.h>
+
+@interface Beacon()<CBPeripheralManagerDelegate>
+@property CLBeaconRegion        * beaconRegion;
+@property CBPeripheralManager   * peripheralManager;
+@end
 
 
 @implementation Beacon
 
--(id)initWithUUID:(std::string)UUID withMajor:(int)major withMinor:(int)minor
+-(id)initWithUUID:(NSString*)UUID withMajor:(int)major withMinor:(int)minor
 {
     self = [super init];
     if(self)
     {
         // Beacon UUID
-        NSUUID *proximityUUID = [[NSUUID alloc]
-                                 initWithUUIDString:[NSString stringWithUTF8String:UUID.c_str()]];
-        
+        NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:UUID];
+
         // Create the beacon region.
         self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
                                                                     major:major
                                                                     minor:minor
                                                                identifier:@"com.solstice-mobile.meetup"];
-        
+
         // Create the peripheral manager.
         self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:nil];
     }
@@ -61,7 +67,7 @@
     states[CBPeripheralManagerStatePoweredOff]      = "Bluetooth is currently powered off.";
     states[CBPeripheralManagerStatePoweredOn]       = "Bluetooth is currently powered on and is available to use.";
     
-    NSLog(@"Peripheral state: %s",states[[peripheral state]]);
+    NSLog(@"Peripheral state: %s", states[[peripheral state]] );
 }
 
 -(void)dealloc
@@ -70,3 +76,4 @@
 }
 
 @end
+
