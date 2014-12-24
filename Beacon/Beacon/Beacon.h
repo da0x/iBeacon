@@ -7,9 +7,6 @@
 //
 
 
-#include <string>
-
-
 @interface Beacon : NSObject
 
 -(id)initWithUUID:(NSString*)UUID withMajor:(int)major withMinor:(int)minor;
