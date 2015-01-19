@@ -11,6 +11,7 @@
 #include <map>
 #include "DA_ASCII_Table.h"
 
+
 @interface Explorer : NSObject<CLLocationManagerDelegate>
 @property int proximity;
 @property CLBeaconRegion *beaconRegion;

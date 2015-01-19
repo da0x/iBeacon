@@ -30,6 +30,8 @@
         // View
     self.title              = self.beaconTitle;
     self.beaconLogo.image   = [UIImage imageNamed:self.beaconImageName];
+    
+        // control
     [self.beaconSwitch addTarget:self action:@selector(switchChanged) forControlEvents:UIControlEventValueChanged];
 }
 

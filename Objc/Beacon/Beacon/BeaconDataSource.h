@@ -13,4 +13,6 @@
 
 -(NSInteger)  count;
 -(BeaconInfo*)beaconInfoAtIndex:(NSInteger)index;
+
+-(instancetype)init;
 @end

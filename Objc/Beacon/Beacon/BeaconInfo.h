@@ -16,5 +16,9 @@
 @property (nonatomic,readonly) NSInteger major;
 @property (nonatomic,readonly) NSInteger minor;
 
--(instancetype)initWithName:(NSString*)name withImageName:(NSString*)imageName withUUIDString:(NSString*)UUIDString withMajor:(NSInteger)major withMinor:(NSInteger)minor;
+-(instancetype)initWithName:(NSString*)name
+              withImageName:(NSString*)imageName
+             withUUIDString:(NSString*)UUIDString
+                  withMajor:(NSInteger)major
+                  withMinor:(NSInteger)minor;
 @end

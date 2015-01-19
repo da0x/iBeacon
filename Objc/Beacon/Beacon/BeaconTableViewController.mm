@@ -21,6 +21,9 @@
 -(void)awakeFromNib
 {
     self.beacons = [[BeaconDataSource alloc] init];
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 }
 
 #pragma mark - Table view data source
@@ -40,7 +43,7 @@
         // Model
     BeaconInfo*       info = [self.beacons beaconInfoAtIndex:indexPath.row];
     
-        // Controlling
+        // Control
     cell.textLabel.text         = info.name;
     cell.detailTextLabel.text   = info.uuid;
     

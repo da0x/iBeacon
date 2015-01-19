@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9ED1CADA-9209-4276-86B5-F2297C021041</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Beacon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC6E024F369BD69549BFDF3F6C52BBD30A3B2843</key>
+		<string>https://github.com/daher-alfawares/iBeacon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Objc/Beacon/Beacon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC6E024F369BD69549BFDF3F6C52BBD30A3B2843</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/daher-alfawares/iBeacon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC6E024F369BD69549BFDF3F6C52BBD30A3B2843</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC6E024F369BD69549BFDF3F6C52BBD30A3B2843</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBeacon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
