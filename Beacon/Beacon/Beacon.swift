@@ -9,6 +9,8 @@
 import CoreBluetooth
 import CoreLocation
 
+
+
 class Beacon : NSObject, CBPeripheralManagerDelegate
 {
     let beaconRegion        = CLBeaconRegion()

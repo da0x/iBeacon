@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xZm-TK-K0b">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -60,10 +61,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Sf-L1l">
-                                <rect key="frame" x="32" y="90" width="51" height="31"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNh-Xs-jVi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNh-Xs-jVi">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,11 +70,26 @@
                                     <action selector="toggle:" destination="2vS-0L-s8L" eventType="touchUpInside" id="Bo7-8X-YRE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80E-JW-DHX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="80E-JW-DHX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-Sf-L1l">
+                                <rect key="frame" x="32" y="90" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IfU-Sf-L1l" firstAttribute="top" secondItem="gYd-vM-qya" secondAttribute="bottom" constant="26" id="12r-K1-Kjx"/>
+                            <constraint firstItem="cNh-Xs-jVi" firstAttribute="trailing" secondItem="80E-JW-DHX" secondAttribute="trailing" id="Iz3-wa-NKs"/>
+                            <constraint firstItem="80E-JW-DHX" firstAttribute="bottom" secondItem="3pZ-Xb-XJW" secondAttribute="top" id="QZP-Mw-O0W"/>
+                            <constraint firstItem="cNh-Xs-jVi" firstAttribute="top" secondItem="zvP-pZ-PlZ" secondAttribute="top" id="SAV-hH-cHQ"/>
+                            <constraint firstItem="80E-JW-DHX" firstAttribute="leading" secondItem="zvP-pZ-PlZ" secondAttribute="leading" id="Uxd-Ow-OAJ"/>
+                            <constraint firstItem="80E-JW-DHX" firstAttribute="top" secondItem="cNh-Xs-jVi" secondAttribute="top" id="Z9y-yR-IYL"/>
+                            <constraint firstAttribute="trailing" secondItem="cNh-Xs-jVi" secondAttribute="trailing" id="gaf-LH-FXe"/>
+                            <constraint firstItem="cNh-Xs-jVi" firstAttribute="bottom" secondItem="3pZ-Xb-XJW" secondAttribute="top" id="kgJ-Ye-mec"/>
+                            <constraint firstItem="cNh-Xs-jVi" firstAttribute="leading" secondItem="80E-JW-DHX" secondAttribute="leading" id="mTc-dH-ZXe"/>
+                            <constraint firstItem="IfU-Sf-L1l" firstAttribute="leading" secondItem="zvP-pZ-PlZ" secondAttribute="leadingMargin" constant="16" id="qkb-IT-2Cb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="beaconLogo" destination="80E-JW-DHX" id="pLj-o8-XCV"/>
@@ -85,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TP-tj-qsm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2771" y="429"/>
+            <point key="canvasLocation" x="2790" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HIg-VP-KHR">

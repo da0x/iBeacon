@@ -47,7 +47,7 @@ class ViewController: UITableViewController {
         let tableView = self.tableView;
         let index = tableView.indexPathForCell(sender as UITableViewCell)
         let row = index?.row
-        let beacon = self.beacons.beaconInfoAtIndex (row!)
+        let beacon = self.beacons.beaconInfoAtIndex (row!) as BeaconInfo
         
         beaconViewController.beaconName         = beacon.name
         beaconViewController.beaconUUID         = beacon.uuid
@@ -55,5 +55,6 @@ class ViewController: UITableViewController {
         beaconViewController.beaconMajor        = beacon.major
         beaconViewController.beaconMinor        = beacon.minor
     }
+
 }
 
